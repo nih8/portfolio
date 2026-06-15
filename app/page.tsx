@@ -47,7 +47,8 @@ export default function Home() {
             height: "150px",
             borderRadius: "50%",
             objectFit: "cover",
-            marginBottom: "15px",
+            marginBottom: "-10px",
+            marginTop:"20px"
           }}
         />
 
