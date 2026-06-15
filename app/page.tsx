@@ -12,24 +12,28 @@ export default function Home() {
   };
 
   return (
-    <main
-      style={{
-        maxWidth: "850px",
-        margin: "auto",
-        padding: "20px",
-      }}
-    >
+   <main style={{
+    margin: "auto",
+    padding: "20px",
+  }}
+>
+   <div
+  style={{
+    width: "100vw",
+    marginLeft: "calc(-50vw + 50%)",
+  }}
+>
+  <img
+    src="/collage 3.jpeg"
+    alt="My life collage"
+    style={{
+      width: "100%",
+      height: "auto",
+      display: "block",
+    }}
+  />
+</div>
 
-      {/* Life collage */}
-      <img
-        src="/collage 3.jpeg"
-        alt="My life collage"
-        style={{
-          width: "100%",
-          borderRadius: "12px",
-          marginBottom: "35px",
-        }}
-      />
 
 
       {/* Profile section */}
@@ -58,7 +62,7 @@ export default function Home() {
         </h1>
 
 
-        <p style={{ opacity: 0.7 }}>
+        <p color="#dbdbdb" >
           Developer | Builder | Problem Solver
         </p>
 
@@ -68,7 +72,7 @@ export default function Home() {
       <hr
         style={{
           margin: "35px 0",
-          opacity: 0.2,
+          //opacity: 0.2,
         }}
       />
 
@@ -78,6 +82,12 @@ export default function Home() {
 
       <div
         style={{
+          
+          width: "70%",
+  maxWidth: "450px",
+  borderRadius: "10px",
+  margin: "15px auto",
+  //display: "block",
           display: "grid",
           gap: "25px",
         }}
@@ -98,7 +108,7 @@ export default function Home() {
           />
 
 
-          <p style={{ opacity: 0.7 }}>
+          <p >
             I am Niharika More, from Thane, Maharashtra.
             Currently a CSE student in IIT Jodhpur(24-28).
           </p>
@@ -122,7 +132,7 @@ export default function Home() {
           />
 
 
-          <p style={{ opacity: 0.7 }}>
+          <p >
             I'm most comfortable with C++ and enjoy solving
             problems using it. Currently I am trying to make
             something that someone might actually use(hopefully).
@@ -151,7 +161,7 @@ export default function Home() {
           />
 
 
-          <p style={{ opacity: 0.7 }}>
+          <p >
             I like working out and playing mobile games. 
             I also enjoy watching youtube.
             I like trying new food as well.
@@ -174,7 +184,7 @@ export default function Home() {
           />
 
 
-          <ul style={{ opacity: 0.7 }}>
+          <ul >
 
             <li>
               I like cats but im scared to approach them first:(
