@@ -40,9 +40,9 @@ export default function Home() {
           
             <ul style={{ opacity: 0.7 }}>
               <li>I like cats but im scared to approach them first:(</li>
-              <li>I love Zendaya</li>
-              <li>People say im very tall but i dont feel that way lol</li>
-              <li>I love sweet food but i also love spicy food</li>
+              <li>I love Zendaya :)</li>
+              <li>People say im very tall but i dont feel that way though.</li>
+              <li>I love sweet food but I also love spicy food :P</li>
               <li>I'm kinda very eepy</li>
             </ul>
           
