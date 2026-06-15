@@ -22,7 +22,7 @@ export default function Home() {
 
       {/* Life collage */}
       <img
-        src="collage 3.jpeg"
+        src="/collage 3.jpeg"
         alt="My life collage"
         style={{
           width: "100%",
@@ -36,7 +36,7 @@ export default function Home() {
       <div style={{ textAlign: "center" }}>
 
         <img
-          src="main pfp.jpeg"
+          src="/main pfp.jpeg"
           alt="Niharika More"
           style={{
             width: "150px",
@@ -92,7 +92,7 @@ export default function Home() {
 
 
           <img
-            src="who am i.jpeg"
+            src="/who am i.jpeg"
             alt="About me"
             style={imageStyle}
           />
@@ -116,7 +116,7 @@ export default function Home() {
 
 
           <img
-            src="what do i do .jpeg"
+            src="/what do i do .jpeg"
             alt="Things I build"
             style={imageStyle}
           />
@@ -145,7 +145,7 @@ export default function Home() {
 
 
           <img
-            src="hobbies.jpeg"
+            src="/hobbies.jpeg"
             alt="Hobbies"
             style={imageStyle}
           />
@@ -168,7 +168,7 @@ export default function Home() {
             Random facts 'bout me
           </h2>
           <img
-            src="random.jpeg"
+            src="/random.jpeg"
             alt="random"
             style={imageStyle}
           />
