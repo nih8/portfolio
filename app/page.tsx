@@ -1,219 +1,308 @@
+import MemoryPhoto from "@/components/memoryphoto";
+ import ProjectNote from "@/components/ProjectNote";
+ import HobbySection from "@/components/HobbySection";
+ import Fact from "@/components/facts";
+
 export default function Home() {
-  const cardStyle = {
-    padding: "20px",
-    background: "#583a9e",
-    borderRadius: "12px",
-  };
-
-  const imageStyle = {
-    width: "100%",
-    borderRadius: "10px",
-    margin: "15px 0",
-  };
-
   return (
-   <main style={{
-    margin: "auto",
-    padding: "20px",
-  }}
->
-   <div
+    <main
+    
+      style={{
+        minHeight: "2200px",
+        position: "relative",
+        overflow: "hidden",
+        background:
+          "linear-gradient(135deg, #f5edff 0%, #ede0ff 45%, #e9d5ff 100%)",
+        padding: "20px",
+      }}
+    >
+      <div
   style={{
-    width: "100vw",
-    marginLeft: "calc(-50vw + 50%)",
+    position:"absolute",
+    inset:0,
+    backgroundImage:"url('/cets.png')",
+    backgroundRepeat:"repeat",
+    backgroundSize:"280px",
+    opacity:0.025,
+    pointerEvents:"none",
+  }}
+/>
+
+
+
+      <div
+  style={{
+    position: "absolute",
+    top: "170px",
+    left: "50%",
+    transform: "translateX(-50%) rotate(-2deg)",
+    background: "#fffdf8",
+    width: "240px",
+    padding: "15px",
+    paddingBottom: "5px",
+    boxShadow: "0 25px 60px rgba(124,58,237,0.25)",
+    borderRadius: "5px",
+    zIndex: 5,
   }}
 >
-  <img
-    src="/collage 3.jpeg"
-    alt="My life collage"
+
+  {/* tape */}
+  <div
     style={{
-      width: "100%",
-      height: "auto",
-      display: "block",
+      position:"absolute",
+      top:"-18px",
+      left:"50%",
+      transform:"translateX(-50%) rotate(-4deg)",
+      width:"80px",
+      height:"22px",
+      background:"#fde68a",
+      opacity:0.8,
     }}
   />
+
+  <img
+    src="/main pfp.jpeg"
+    style={{
+      width:"240px",
+      height:"240px",
+      objectFit:"cover",
+    }}
+  />
+
+  <h2
+    style={{
+      marginTop:"15px",
+      textAlign:"center",
+      color:"#581c87",
+      fontFamily:"cursive",
+      fontSize:"25px",
+    }}
+  >
+    Niharika More 
+  </h2>
+
+  <p
+    style={{
+      textAlign:"center",
+      color:"#7c3aed",
+      fontFamily:"cursive",
+      fontSize:"14px",
+      marginTop:"8px",
+    }}
+  >
+    welcome 
+  </p>
+
+</div>
+<div
+ style={{
+   position:"absolute",
+   top:"80px",
+   left:"50%",
+   transform:"translateX(-50%) rotate(3deg)",
+   background:"#fef3c7",
+   padding:"12px 18px",
+   borderRadius:"10px",
+   fontFamily:"cursive",
+   color:"#581c87",
+   boxShadow:"0 10px 25px rgba(0,0,0,0.12)",
+   zIndex:10,
+ }}
+>
+ ✿ Hover on these lil images ✿
 </div>
 
 
+      {/* surrounding memories */}
 
-      {/* Profile section */}
-      <div style={{ textAlign: "center" }}>
-
-        <img
-          src="/main pfp.jpeg"
-          alt="Niharika More"
-          style={{
-            width: "150px",
-            height: "150px",
-            borderRadius: "50%",
-            objectFit: "cover",
-            marginBottom: "-10px",
-            marginTop:"20px"
-          }}
-        />
+      <MemoryPhoto
+  image="/wall3.jpeg" 
+  text="dance mode 💃"
+  top="140px"
+  left="8%"
+  rotate="-12deg"
+  size="120px"
+  target="hobbies"
+/>
 
 
-        <h1
-          style={{
-            fontSize: "40px",
-            marginBottom: "10px",
-          }}
-        >
-          Niharika More
-        </h1>
+      <MemoryPhoto
+  image="/who am i.jpeg"
+  text="my IIT journey ✨"
+  top="110px"
+  left="68%"
+  rotate="8deg"
+  size="165px"
+  target="projects"
+/>
 
 
-        <p color="#dbdbdb" >
-          Developer | Builder | Problem Solver
-        </p>
-
-      </div>
-
-
-      <hr
-        style={{
-          margin: "35px 0",
-          //opacity: 0.2,
-        }}
-      />
+      <MemoryPhoto
+  image="/wall2.jpeg"
+  text="stage energy 🎤"
+  top="540px"
+  left="12%"
+  rotate="7deg"
+  size="140px"
+  target="experience"
+/>
 
 
+      <MemoryPhoto
+  image="/wall4.jpeg"
+  text="just me 🌸"
+  top="560px"
+  left="70%"
+  rotate="-8deg"
+  size="125px"
+  target="facts"
+/>
+ 
+<section
+  id="projects"
+  style={{
+    position:"relative",
+    height:"1600px",
+    marginTop:"900px",
+  }}
+>
 
-      {/* Cards */}
+<div
+  style={{
+    position: "absolute",
+    top: "300px",
+    left: "50%",
+    transform: "translateX(-50%) rotate(0deg)",
+    background: "#fffdf8",
+    width: "105px",
+    padding: "15px",
+    paddingBottom: "5px",
+    boxShadow: "0 25px 60px rgba(124,58,237,0.25)",
+    borderRadius: "5px",
+    zIndex: 5,
+  }}
+>
 
-      <div
-        style={{
-          
-          width: "70%",
-  maxWidth: "450px",
-  borderRadius: "10px",
-  margin: "15px auto",
-  //display: "block",
-          display: "grid",
-          gap: "25px",
-        }}
-      >
+  {/* tape */}
+  <div
+    style={{
+      position:"absolute",
+      top:"-18px",
+      left:"50%",
+      transform:"translateX(-50%) rotate(0deg)",
+      width:"80px",
+      height:"22px",
+      background:"#fde68a",
+      opacity:0.8,
+    }}
+  />
 
+  <img
+    src="/image.png"
+    style={{
+      width:"100px",
+      height:"100px",
+      objectFit:"cover",
+    }}
+  />
 
-        <div style={cardStyle}>
+  
+  <p
+    style={{
+      textAlign:"center",
+      color:"#7c3aed",
+      fontFamily:"cursive",
+      fontSize:"10px",
+      marginTop:"8px",
+    }}
+  >
+    My Projects yay (hover to see smth cool)
+  </p>
 
-          <h2>
-            Me
-          </h2>
-
-
-          <img
-            src="/who am i.jpeg"
-            alt="About me"
-            style={imageStyle}
-          />
-
-
-          <p >
-            I am Niharika More, from Thane, Maharashtra.
-            Currently a CSE student in IIT Jodhpur(24-28).
-          </p>
-
-
-        </div>
-
-
-
-        <div style={cardStyle}>
-
-          <h2>
-            What do i do?
-          </h2>
-
-
-          <img
-            src="/what do i do .jpeg"
-            alt="Things I build"
-            style={imageStyle}
-          />
-
-
-          <p >
-            I'm most comfortable with C++ and enjoy solving
-            problems using it. Currently I am trying to make
-            something that someone might actually use(hopefully).
-            Apart from that my projects can be seen{" "}
-            <a href="/projects">
-              <u>here</u>
-            </a>.
-          </p>
-
-
-        </div>
-
-
-
-        <div style={cardStyle}>
-
-          <h2>
-            Hobbies
-          </h2>
+</div>
 
 
-          <img
-            src="/hobbies.jpeg"
-            alt="Hobbies"
-            style={imageStyle}
-          />
+<div
+style={{
+display:"flex",
+justifyContent:"center",
+gap:"30px",
+flexWrap:"wrap",
+}}
+>
+
+<ProjectNote
+  title="AI Logistics Information Assistant"
+  image="/project1.jpeg"
+  description="AI driven information assistant with retrieval pipeline."
+  tech="Python • LangChain • FAISS"
+  demoLink="YOUR_DRIVE_LINK"
+  githubLink="YOUR_GITHUB_LINK"
+  top="100px"
+left="0%"
+rotate="-5deg"
+/>
+<ProjectNote
+  title="AI Logistics Information Assistant"
+  image="/project1.jpeg"
+  description="AI driven information assistant with retrieval pipeline."
+  tech="Python • LangChain • FAISS"
+  demoLink="YOUR_DRIVE_LINK"
+  githubLink="YOUR_GITHUB_LINK"
+  top="100px"
+left="70%"
+rotate="5deg"
+/>
+<ProjectNote
+  title="AI Logistics Information Assistant"
+  image="/project1.jpeg"
+  description="AI driven information assistant with retrieval pipeline."
+  tech="Python • LangChain • FAISS"
+  demoLink="YOUR_DRIVE_LINK"
+  githubLink="YOUR_GITHUB_LINK"
+  top="500px"
+left="0%"
+rotate="5deg"
+/>
+<ProjectNote
+  title="AI Logistics Information Assistant"
+  image="/project1.jpeg"
+  description="AI driven information assistant with retrieval pipeline."
+  tech="Python • LangChain • FAISS"
+  demoLink="YOUR_DRIVE_LINK"
+  githubLink="YOUR_GITHUB_LINK"
+  top="500px"
+left="70%"
+rotate="-5deg"
+/>
 
 
-          <p >
-            I like working out and playing mobile games. 
-            I also enjoy watching youtube.
-            I like trying new food as well.
-          </p>
 
 
-        </div>
+</div>
 
+</section>
+<section
+  id="hobbies"
+  style={{
+    position:"relative",
+    height:"1600px",
+    
+  }}
+>
+  <HobbySection />
+</section>
+<section
+  id="facts"
+  style={{
+    position:"relative",
+    height:"1600px",
+    
+  }}
+>
+  <Fact />
+</section>
 
-
-        <div style={cardStyle}>
-
-          <h2>
-            Random facts 'bout me
-          </h2>
-          <img
-            src="/random.jpeg"
-            alt="random"
-            style={imageStyle}
-          />
-
-
-          <ul >
-
-            <li>
-              I like cats but im scared to approach them first:(
-            </li>
-
-            <li>
-              I love Zendaya :)
-            </li>
-
-            <li>
-              People say im very tall but i dont feel that way though.
-            </li>
-
-            <li>
-              I love sweet food but I also love spicy food :P
-            </li>
-
-            <li>
-              I'm kinda very eepy
-            </li>
-
-          </ul>
-
-
-        </div>
-
-
-      </div>
 
 
     </main>
