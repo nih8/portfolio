@@ -88,43 +88,48 @@ export default function HobbyNote() {
           style={{
             position: "relative",
             marginLeft: "25px",
-            fontFamily: '"Bradley Hand ITC","Segoe Print"',
+            fontFamily: 'inter',
             color: "#581c87",
 
             transform: hover ? "translateY(-2px)" : "translateY(0px)",
             transition: "0.3s ease",
           }}
         >
-          <h6
+          <h4
             style={{
               marginTop: "10px",
-              marginBottom: "20px",
+              marginBottom: "0px",
               letterSpacing: hover ? "1px" : "0px",
               transition: "0.3s ease",
             }}
           >
-            🌸 hobbies
-          </h6>
+            Hobbies
+          </h4>
 
           <ul
             style={{
-              fontSize: "15px",
+              fontSize: "14px",
               transform: hover ? "translateX(2px)" : "translateX(0px)",
               transition: "0.3s ease",
+              fontFamily:"georgia"
             }}
           >
             <li>gaming</li>
             <li>dance</li>
             <li>youtube</li>
+            <li>food:3</li>
           </ul>
 
           <p
             style={{
-              fontSize: "15px",
+              fontSize: "11px",
               color: "#7c3aed",
               opacity: hover ? 1 : 0.8,
               transform: hover ? "translateY(-2px)" : "translateY(0px)",
               transition: "0.3s ease",
+              fontFamily:"Bradley Hand ITC",
+              fontWeight:900
+
             }}
           >
             click for hobby wall →

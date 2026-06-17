@@ -159,7 +159,8 @@ padding:"8px 12px",
 
 fontSize:"12px",
 
-fontFamily:"inter",
+fontFamily:"Bradley Hand ITC",
+fontWeight:900,
 
 transform:"rotate(-6deg)",
 
@@ -170,7 +171,7 @@ boxShadow:
 
 >
 
-⚠️ serious stuff inside
+serious stuff inside :p
 
 </div>
 

@@ -1,3 +1,4 @@
+
 import MemoryPhoto from "@/components/memoryphoto";
 import ContactLetter from "@/components/ContactLetter";
  import Fact from "@/components/facts";
@@ -9,6 +10,7 @@ import ContactLetter from "@/components/ContactLetter";
 import IITNote from "@/components/IITNote";
 import Bubble from "@/components/SurpriseBubble";
 import Para from "@/components/Parallax";
+
 export default function Home() {
   return (
     <main
@@ -22,7 +24,7 @@ export default function Home() {
         padding: "20px",
       }}
     >
-      
+     
       <div
   style={{
     position:"absolute",
@@ -30,108 +32,62 @@ export default function Home() {
     backgroundImage:"url('/cets.png')",
     backgroundRepeat:"repeat",
     backgroundSize:"280px",
-    opacity:0.025,
+    opacity:0.08,
     pointerEvents:"none",
   }}
 />
 
 
 
-      <div
-  style={{
-    position: "absolute",
-    top: "170px",
-    left: "50%",
-    transform: "translateX(-50%) rotate(-2deg)",
-    background: "#fffdf8",
-    width: "150px",
-    padding: "15px",
-    paddingBottom: "5px",
-    boxShadow: "0 25px 60px rgba(124,58,237,0.25)",
-    borderRadius: "5px",
-    zIndex: 5,
-  }}
->
+      <MemoryPhoto
+      image="/main.jpeg"
+      text="This is me :)"
+      top="180px"
+      left="40%"
+      rotate="-5deg"
+      target="about-me"
+      />
 
-  {/* tape */}
-  <div
-    style={{
-      position:"absolute",
-      top:"-18px",
-      left:"50%",
-      transform:"translateX(-50%) rotate(-4deg)",
-      width:"80px",
-      height:"22px",
-      background:"#fde68a",
-      opacity:0.8,
-    }}
-  />
 
-  <img
-    src="/main.jpeg"
-    style={{
-      width:"150px",
-      height:"150px",
-      objectFit:"cover",
-    }}
-  />
-
-  
-
-  <p
-    style={{
-      textAlign:"center",
-      color:"#7c3aed",
-     fontFamily: '"Bradley Hand ITC","Segoe Print"',
-      fontSize:"14px",
-      marginTop:"0px",
-    }}
-  >
-    ME 
-  </p>
-
-</div>
 
 
 
 <Fact
-  fact="I love cats but I'm scared of them 😭"
-  top="120px"
-  left="80%"
-  rotate="-8deg"
-/>
-
-
-<Fact
-  fact="💣 BOOM. You thought this was a fact."
+  fact="💣 BOOM. lol"
   top="400px"
   left="40%"
-  rotate="7deg"
+  rotate="15deg"
+  color = "#0fbedd"
 />
 
 
 <Fact
-  fact="I can sleep literally anywhere."
+  fact="i love Zendaya"
   top="250px"
   left="25%"
   rotate="5deg"
+  color = "#80c56e"
 />
 
 
 <Fact
-  fact="I love building random projects ✨"
+  fact="im always eepy"
   top="400px"
   left="75%"
   rotate="-6deg"
+  color = "#c77acb"
 />
 
 
 <Fact
-  fact="Gaming is one of my favourite escapes 🎮"
+  fact="i like cats but im scared to approach 'em"
   top="40px"
   left="45%"
   rotate="9deg"
+  color = "#efabab"
 />
+
+
 
 
       
@@ -198,7 +154,7 @@ rotate="3deg"
 </section>
 <ContactLetter
   top="15%"
-  left="10%"
+  left="15%"
   rotate="-4deg"
 />
 
@@ -208,6 +164,7 @@ rotate="3deg"
 <ResumeBriefcase />
 <IITNote />
 <Bubble/>
+
 
 
     </main>

@@ -30,15 +30,16 @@ export default function ResumeBriefcase() {
       <div
         style={{
           position: "absolute",
-          top: "-25px",
+          top: "90px",
           fontSize: "12px",
-          color: "white",
+          color: "purple",
           opacity: hovered ? 1 : 0,
           transition: "0.2s ease",
           whiteSpace: "nowrap",
+          fontWeight:900
         }}
       >
-        open my credentials →
+        open my credentials 
       </div>
 
       {/* paper */}

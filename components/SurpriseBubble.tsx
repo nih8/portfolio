@@ -88,7 +88,7 @@ export default function SurpriseBubble() {
             }}
           >
             <img
-              src="/your-photo.jpg"
+              src="/wall4.jpeg"
               alt="cute me"
               style={{
                 width: "100%",
@@ -99,12 +99,13 @@ export default function SurpriseBubble() {
             <p
               style={{
                 marginTop: "10px",
-                fontFamily: "Inter, sans-serif",
-                fontSize: "13px",
+                fontFamily: "Bradley Hand ITC",
+                fontWeight:900,
+                fontSize: "20px",
                 color: "#444",
               }}
             >
-              it's just a cute pic of me lol
+              it's just a cute pic of me lol :P
             </p>
           </div>
         </div>

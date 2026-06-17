@@ -144,19 +144,11 @@ lineHeight:"1.7",
 
 Let's connect :)
 
-<br/>
 
-I love building things,
-solving problems and
-creating random projects.
 
 </p>
 
 
-
-<h3>
-Find me here ✨
-</h3>
 
 
 <p>

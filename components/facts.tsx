@@ -7,9 +7,10 @@ type FactProps = {
   top: string;
   left: string;
   rotate: string;
+  color: string;
 };
 
-export default function Fact({ fact, top, left, rotate }: FactProps) {
+export default function Fact({ fact, top, left, rotate, color }: FactProps) {
   const [revealed, setRevealed] = useState(false);
   const [hover, setHover] = useState(false);
 
@@ -19,6 +20,7 @@ export default function Fact({ fact, top, left, rotate }: FactProps) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       style={{
+        borderRadius:"5%",
         position: "absolute",
         top,
         left,
@@ -26,7 +28,7 @@ export default function Fact({ fact, top, left, rotate }: FactProps) {
         width: "50px",
         height: "50px",
 
-        background: "#fde68a",
+        background: color,
         padding: "15px",
         boxShadow: hover
           ? "0 18px 35px rgba(0,0,0,0.22)"
@@ -45,9 +47,10 @@ export default function Fact({ fact, top, left, rotate }: FactProps) {
         justifyContent: "center",
 
         textAlign: "center",
-        fontFamily: "georgia",
+        fontFamily: "Bradley Hand ITC",
+        fontWeight: 900,
         color: "#581c87",
-        fontSize: "9px",
+        fontSize: "11px",
         userSelect: "none",
       }}
     >

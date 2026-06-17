@@ -23,12 +23,13 @@ export default function ContactPhone({ top, left, rotate }: PhoneProps) {
         style={{
           position: "absolute",
 
-          
-
           width: "95px",
           height: "95px",
-          
-          top,left,rotate,
+
+          top,
+          left,
+
+          "--rot": rotate,
 
           cursor: "pointer",
 
@@ -36,8 +37,12 @@ export default function ContactPhone({ top, left, rotate }: PhoneProps) {
             ? `rotate(${rotate}) translateY(-10px) scale(1.05)`
             : `rotate(${rotate}) translateY(0px) scale(1)`,
 
-          transition: "all 0.25s ease",
-        }}
+          animation: !hover
+            ? "phoneVibrate 1.6s infinite ease-in-out"
+            : "none",
+
+          transition: "transform 0.25s ease",
+        } as React.CSSProperties}
       >
         {/* waves */}
         <div
@@ -140,10 +145,8 @@ export default function ContactPhone({ top, left, rotate }: PhoneProps) {
         </div>
       </div>
 
-      {/* 📩 POPUP (unchanged) */}
-      {open && (
-        <ContactPostcard close={() => setOpen(false)} />
-      )}
+      {/* 📩 POPUP */}
+      {open && <ContactPostcard close={() => setOpen(false)} />}
     </>
   );
 }

@@ -107,7 +107,7 @@ export default function CookingPot() {
             margin:"5px 0",
           }}
           >
-            🍲 currently cooking
+            Currently Cooking
           </h3>
 
 
@@ -115,6 +115,8 @@ export default function CookingPot() {
           style={{
             margin:"5px",
             fontSize:"14px",
+            fontFamily:"Bradley Hand ITC",
+            fontWeight:900
           }}
           >
            Where did my money go?
