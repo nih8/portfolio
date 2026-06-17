@@ -42,53 +42,8 @@ export default function RootLayout({
           }}
         />
 
-        {/* 🌸 soft glow blobs (your original vibe, refined) */}
-        <div
-          style={{
-            position: "fixed",
-            top: "-150px",
-            left: "-150px",
-            width: "420px",
-            height: "420px",
-            background: "#c084fc",
-            filter: "blur(170px)",
-            opacity: 0.35,
-            pointerEvents: "none",
-            zIndex: 0,
-          }}
-        />
-
-        <div
-          style={{
-            position: "fixed",
-            bottom: "-180px",
-            right: "-180px",
-            width: "480px",
-            height: "480px",
-            background: "#a78bfa",
-            filter: "blur(190px)",
-            opacity: 0.3,
-            pointerEvents: "none",
-            zIndex: 0,
-          }}
-        />
-
-        {/* 📄 subtle grain texture (your existing system kept) */}
-        <div
-          style={{
-            position: "fixed",
-            inset: 0,
-
-            backgroundImage: "url('/cets.png')",
-            backgroundRepeat: "repeat",
-            backgroundSize: "280px",
-
-            opacity: 0.03,
-
-            pointerEvents: "none",
-            zIndex: 0,
-          }}
-        />
+        
+        
 
         {/* 🧱 main container */}
         <div
@@ -99,7 +54,7 @@ export default function RootLayout({
             maxWidth: "1000px",
             margin: "0 auto",
 
-            padding: "40px 20px 80px",
+            
           }}
         >
           {children}
