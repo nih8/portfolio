@@ -72,7 +72,7 @@ export default function ProjectNote({
           style={{
             textAlign: "center",
             color: "#7c3aed",
-            fontFamily: "cursive",
+            fontFamily: "inter",
             fontSize: "12px",
             margin: "5px 0 10px",
           }}
@@ -132,7 +132,7 @@ export default function ProjectNote({
       <h5
         style={{
           color: "#581c87",
-          fontFamily: "cursive",
+          fontFamily: "inter",
           marginTop :"-1px",
           marginBottom: "5px",
         }}

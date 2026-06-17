@@ -97,7 +97,7 @@ export default function MemoryPhoto({
           style={{
             marginTop: "8px",
             textAlign: "center",
-            fontFamily: "cursive",
+            fontFamily: "inter",
             color: "#6b21a8",
             fontSize: "13px",
           }}

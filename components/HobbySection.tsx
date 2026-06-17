@@ -93,7 +93,7 @@ export default function HobbyUniverseClean() {
             background: "#fffdf8",
             padding: "14px 18px",
             borderRadius: "10px",
-            fontFamily: "cursive",
+            fontFamily: "inter",
             zIndex: 2,
           }}
         >
@@ -158,7 +158,7 @@ export default function HobbyUniverseClean() {
             padding: "18px",
             borderRadius: "12px",
             zIndex: 100,
-            fontFamily: "cursive",
+            fontFamily: "inter",
           }}
         >
           <div style={{ fontSize: "32px", textAlign: "center" }}>

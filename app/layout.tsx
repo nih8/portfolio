@@ -14,12 +14,35 @@ export default function RootLayout({
         style={{
           margin: 0,
           minHeight: "100vh",
-          background: "linear-gradient(135deg, #f6ecff, #eadcff, #ddd6fe)",
+
+          /* 💜 KEEP YOUR VIBE */
+          background:
+            "#f5edff 0%",
+
           color: "#3b0764",
-          fontFamily: "sans-serif",
+          fontFamily: '"Bradley Hand ITC","Segoe Print"',
+          overflowX: "hidden",
         }}
       >
-        {/* background glow */}
+        {/* 💜 glowing frame (glass purple border) */}
+        <div
+          style={{
+            position: "fixed",
+            inset: "14px",
+
+            borderRadius: "22px",
+
+            border: "1px solid rgba(168, 85, 247, 0.25)",
+
+            boxShadow:
+              "0 0 40px rgba(168, 85, 247, 0.12), inset 0 0 80px rgba(168, 85, 247, 0.08)",
+
+            pointerEvents: "none",
+            zIndex: 0,
+          }}
+        />
+
+        {/* 🌸 soft glow blobs (your original vibe, refined) */}
         <div
           style={{
             position: "fixed",
@@ -50,71 +73,37 @@ export default function RootLayout({
           }}
         />
 
-        {/* container */}
-        <div
-          style={{
-            position: "relative",
-            zIndex: 1,
-            maxWidth: "1000px",
-            margin: "0 auto",
-            padding: "28px 20px 60px",
-          }}
-        >
-          {/* NAVBAR (no hover JS, pure CSS-safe) */}
-          <nav
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              gap: "26px",
-              marginBottom: "45px",
-              padding: "12px 18px",
-              borderRadius: "16px",
-              background: "rgba(255,255,255,0.35)",
-              backdropFilter: "blur(14px)",
-              border: "1px solid rgba(168, 85, 247, 0.15)",
-              boxShadow: "0 10px 30px rgba(124, 58, 237, 0.08)",
-            }}
-          >
-            <a className="navLink" href="/">Home</a>
-            <a className="navLink" href="/projects">Projects</a>
-            <a className="navLink" href="/Niharika_More_sde_resume (2).pdf">Resume</a>
-
-            <style>{`
-              .navLink {
-                color: #4c1d95;
-                text-decoration: none;
-                font-weight: 500;
-                font-size: 14px;
-                opacity: 0.8;
-                padding: 6px 10px;
-                border-radius: 10px;
-                transition: all 0.2s ease;
-              }
-
-              .navLink:hover {
-                opacity: 1;
-                background: rgba(168, 85, 247, 0.12);
-                transform: translateY(-1px);
-              }
-            `}</style>
-          </nav>
-
-          {children}
-        </div>
-
-        {/* texture */}
+        {/* 📄 subtle grain texture (your existing system kept) */}
         <div
           style={{
             position: "fixed",
             inset: 0,
+
             backgroundImage: "url('/cets.png')",
             backgroundRepeat: "repeat",
             backgroundSize: "280px",
+
             opacity: 0.03,
+
             pointerEvents: "none",
             zIndex: 0,
           }}
         />
+
+        {/* 🧱 main container */}
+        <div
+          style={{
+            position: "relative",
+            zIndex: 1,
+
+            maxWidth: "1000px",
+            margin: "0 auto",
+
+            padding: "40px 20px 80px",
+          }}
+        >
+          {children}
+        </div>
       </body>
     </html>
   );

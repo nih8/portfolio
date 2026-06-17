@@ -1,8 +1,14 @@
 import MemoryPhoto from "@/components/memoryphoto";
- import ProjectNote from "@/components/ProjectNote";
- import HobbySection from "@/components/HobbySection";
+import ContactLetter from "@/components/ContactLetter";
  import Fact from "@/components/facts";
-
+ import HobbyNote from "@/components/HobbyNote";
+ import CookingPot from "@/components/CookingPot";
+ import ProjectFolder from "@/components/ProjectFolder";
+ import ProjectFile from "@/components/ProjectFile";
+ import ResumeBriefcase from "@/components/ResumeBriefCase";
+import IITNote from "@/components/IITNote";
+import Bubble from "@/components/SurpriseBubble";
+import Para from "@/components/Parallax";
 export default function Home() {
   return (
     <main
@@ -12,10 +18,11 @@ export default function Home() {
         position: "relative",
         overflow: "hidden",
         background:
-          "linear-gradient(135deg, #f5edff 0%, #ede0ff 45%, #e9d5ff 100%)",
+          "#f5efff",
         padding: "20px",
       }}
     >
+      
       <div
   style={{
     position:"absolute",
@@ -37,7 +44,7 @@ export default function Home() {
     left: "50%",
     transform: "translateX(-50%) rotate(-2deg)",
     background: "#fffdf8",
-    width: "240px",
+    width: "150px",
     padding: "15px",
     paddingBottom: "5px",
     boxShadow: "0 25px 60px rgba(124,58,237,0.25)",
@@ -61,102 +68,73 @@ export default function Home() {
   />
 
   <img
-    src="/main pfp.jpeg"
+    src="/main.jpeg"
     style={{
-      width:"240px",
-      height:"240px",
+      width:"150px",
+      height:"150px",
       objectFit:"cover",
     }}
   />
 
-  <h2
-    style={{
-      marginTop:"15px",
-      textAlign:"center",
-      color:"#581c87",
-      fontFamily:"cursive",
-      fontSize:"25px",
-    }}
-  >
-    Niharika More 
-  </h2>
+  
 
   <p
     style={{
       textAlign:"center",
       color:"#7c3aed",
-      fontFamily:"cursive",
+     fontFamily: '"Bradley Hand ITC","Segoe Print"',
       fontSize:"14px",
-      marginTop:"8px",
+      marginTop:"0px",
     }}
   >
-    welcome 
+    ME 
   </p>
 
 </div>
-<div
- style={{
-   position:"absolute",
-   top:"80px",
-   left:"50%",
-   transform:"translateX(-50%) rotate(3deg)",
-   background:"#fef3c7",
-   padding:"12px 18px",
-   borderRadius:"10px",
-   fontFamily:"cursive",
-   color:"#581c87",
-   boxShadow:"0 10px 25px rgba(0,0,0,0.12)",
-   zIndex:10,
- }}
->
- ✿ Hover on these lil images ✿
-</div>
 
 
-      {/* surrounding memories */}
 
-      <MemoryPhoto
-  image="/wall3.jpeg" 
-  text="dance mode 💃"
-  top="140px"
-  left="8%"
-  rotate="-12deg"
-  size="120px"
-  target="hobbies"
-/>
-
-
-      <MemoryPhoto
-  image="/who am i.jpeg"
-  text="my IIT journey ✨"
-  top="110px"
-  left="68%"
-  rotate="8deg"
-  size="165px"
-  target="projects"
-/>
-
-
-      <MemoryPhoto
-  image="/wall2.jpeg"
-  text="stage energy 🎤"
-  top="540px"
-  left="12%"
-  rotate="7deg"
-  size="140px"
-  target="experience"
-/>
-
-
-      <MemoryPhoto
-  image="/wall4.jpeg"
-  text="just me 🌸"
-  top="560px"
-  left="70%"
+<Fact
+  fact="I love cats but I'm scared of them 😭"
+  top="120px"
+  left="80%"
   rotate="-8deg"
-  size="125px"
-  target="facts"
 />
+
+
+<Fact
+  fact="💣 BOOM. You thought this was a fact."
+  top="400px"
+  left="40%"
+  rotate="7deg"
+/>
+
+
+<Fact
+  fact="I can sleep literally anywhere."
+  top="250px"
+  left="25%"
+  rotate="5deg"
+/>
+
+
+<Fact
+  fact="I love building random projects ✨"
+  top="400px"
+  left="75%"
+  rotate="-6deg"
+/>
+
+
+<Fact
+  fact="Gaming is one of my favourite escapes 🎮"
+  top="40px"
+  left="45%"
+  rotate="9deg"
+/>
+
+
+      
  
 <section
   id="projects"
@@ -166,143 +144,70 @@ export default function Home() {
     marginTop:"900px",
   }}
 >
-
-<div
-  style={{
-    position: "absolute",
-    top: "300px",
-    left: "50%",
-    transform: "translateX(-50%) rotate(0deg)",
-    background: "#fffdf8",
-    width: "105px",
-    padding: "15px",
-    paddingBottom: "5px",
-    boxShadow: "0 25px 60px rgba(124,58,237,0.25)",
-    borderRadius: "5px",
-    zIndex: 5,
-  }}
+<h1
+style={{
+textAlign:"center",
+fontFamily: '"Bradley Hand ITC","Segoe Print"',
+color:"#3f3f46"
+}}
 >
-
-  {/* tape */}
-  <div
-    style={{
-      position:"absolute",
-      top:"-18px",
-      left:"50%",
-      transform:"translateX(-50%) rotate(0deg)",
-      width:"80px",
-      height:"22px",
-      background:"#fde68a",
-      opacity:0.8,
-    }}
-  />
-
-  <img
-    src="/image.png"
-    style={{
-      width:"100px",
-      height:"100px",
-      objectFit:"cover",
-    }}
-  />
-
-  
-  <p
-    style={{
-      textAlign:"center",
-      color:"#7c3aed",
-      fontFamily:"cursive",
-      fontSize:"10px",
-      marginTop:"8px",
-    }}
-  >
-    My Projects yay (hover to see smth cool)
-  </p>
-
-</div>
-
-
+Project Archive
+</h1>
 <div
 style={{
-display:"flex",
+display:"grid",
+gridTemplateColumns:"repeat(2,260px)",
 justifyContent:"center",
-gap:"30px",
-flexWrap:"wrap",
+gap:"60px",
+marginTop:"70px"
 }}
 >
 
-<ProjectNote
-  title="AI Logistics Information Assistant"
-  image="/project1.jpeg"
-  description="AI driven information assistant with retrieval pipeline."
-  tech="Python • LangChain • FAISS"
-  demoLink="YOUR_DRIVE_LINK"
-  githubLink="YOUR_GITHUB_LINK"
-  top="100px"
-left="0%"
-rotate="-5deg"
-/>
-<ProjectNote
-  title="AI Logistics Information Assistant"
-  image="/project1.jpeg"
-  description="AI driven information assistant with retrieval pipeline."
-  tech="Python • LangChain • FAISS"
-  demoLink="YOUR_DRIVE_LINK"
-  githubLink="YOUR_GITHUB_LINK"
-  top="100px"
-left="70%"
-rotate="5deg"
-/>
-<ProjectNote
-  title="AI Logistics Information Assistant"
-  image="/project1.jpeg"
-  description="AI driven information assistant with retrieval pipeline."
-  tech="Python • LangChain • FAISS"
-  demoLink="YOUR_DRIVE_LINK"
-  githubLink="YOUR_GITHUB_LINK"
-  top="500px"
-left="0%"
-rotate="5deg"
-/>
-<ProjectNote
-  title="AI Logistics Information Assistant"
-  image="/project1.jpeg"
-  description="AI driven information assistant with retrieval pipeline."
-  tech="Python • LangChain • FAISS"
-  demoLink="YOUR_DRIVE_LINK"
-  githubLink="YOUR_GITHUB_LINK"
-  top="500px"
-left="70%"
-rotate="-5deg"
+
+<ProjectFile
+number="01"
+title="CrackTheCode"
+rotate="-3deg"
 />
 
 
+<ProjectFile
+number="02"
+title="Project Two"
+rotate="4deg"
+/>
+
+
+<ProjectFile
+number="03"
+title="Project Three"
+rotate="-2deg"
+/>
+
+
+<ProjectFile
+number="04"
+title="Project Four"
+rotate="3deg"
+/>
 
 
 </div>
 
-</section>
-<section
-  id="hobbies"
-  style={{
-    position:"relative",
-    height:"1600px",
-    
-  }}
->
-  <HobbySection />
-</section>
-<section
-  id="facts"
-  style={{
-    position:"relative",
-    height:"1600px",
-    
-  }}
->
-  <Fact />
-</section>
 
+</section>
+<ContactLetter
+  top="15%"
+  left="10%"
+  rotate="-4deg"
+/>
+
+<HobbyNote />
+<CookingPot />
+<ProjectFolder />
+<ResumeBriefcase />
+<IITNote />
+<Bubble/>
 
 
     </main>
