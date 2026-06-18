@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { createPortal } from "react-dom";
 
 export default function SurpriseBubble() {
   const [open, setOpen] = useState(false);
@@ -15,13 +16,11 @@ export default function SurpriseBubble() {
         onMouseLeave={() => setHover(false)}
         style={{
           position: "absolute",
-
-          top: "2%",
-          left: "30%",
+          top: "30px",
+          left: "300px",
 
           width: "75px",
           height: "75px",
-
           borderRadius: "50%",
 
           cursor: "pointer",
@@ -55,61 +54,56 @@ export default function SurpriseBubble() {
         SURPRISE
       </div>
 
-      {/* 🖼️ MODAL */}
-      {open && (
-        <div
-          onClick={() => setOpen(false)}
-          style={{
-            position: "fixed",
-            inset: 0,
-
-            background: "rgba(0,0,0,0.6)",
-
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-
-            zIndex: 999,
-          }}
-        >
+      {/* 🖼️ MODAL (FIXED USING PORTAL) */}
+      {open &&
+        createPortal(
           <div
-            onClick={(e) => e.stopPropagation()}
+            onClick={() => setOpen(false)}
             style={{
-              background: "#fff",
-              padding: "18px",
-
-              borderRadius: "16px",
-
-              textAlign: "center",
-
-              boxShadow: "0 20px 60px rgba(0,0,0,0.4)",
-
-              maxWidth: "300px",
+              position: "fixed",
+              inset: 0,
+              background: "rgba(0,0,0,0.6)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              zIndex: 99999,
             }}
           >
-            <img
-              src="/wall4.jpeg"
-              alt="cute me"
+            <div
+              onClick={(e) => e.stopPropagation()}
               style={{
-                width: "100%",
-                borderRadius: "12px",
-              }}
-            />
-
-            <p
-              style={{
-                marginTop: "10px",
-                fontFamily: "Bradley Hand ITC",
-                fontWeight:900,
-                fontSize: "20px",
-                color: "#444",
+                background: "#fff",
+                padding: "18px",
+                borderRadius: "16px",
+                textAlign: "center",
+                boxShadow: "0 20px 60px rgba(0,0,0,0.4)",
+                maxWidth: "300px",
               }}
             >
-              it's just a cute pic of me lol :P
-            </p>
-          </div>
-        </div>
-      )}
+              <img
+                src="/wall4.jpeg"
+                alt="cute me"
+                style={{
+                  width: "100%",
+                  borderRadius: "12px",
+                }}
+              />
+
+              <p
+                style={{
+                  marginTop: "10px",
+                  fontFamily: "Bradley Hand ITC",
+                  fontWeight: 900,
+                  fontSize: "18px",
+                  color: "#444",
+                }}
+              >
+                it's just a cute pic of me lol :P
+              </p>
+            </div>
+          </div>,
+          document.body
+        )}
     </>
   );
 }

@@ -183,7 +183,7 @@ overflow:"hidden",
 
 >
 
-
+<a href="www.google.com">
 <img
 
 src="/placeholder-project.png"
@@ -198,7 +198,7 @@ objectFit:"cover",
 
 }}
 
-/>
+/></a>
 
 
 
@@ -237,10 +237,10 @@ color:"#18181b",
 
 }}
 
->
+><a href="www.google.com" style={{color:"black",textDecoration:"none"}}>
 
 ▶
-
+</a>
 </div>
 
 

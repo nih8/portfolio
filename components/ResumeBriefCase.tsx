@@ -6,7 +6,7 @@ export default function ResumeBriefcase() {
   const [hovered, setHovered] = useState(false);
 
   const handleClick = () => {
-    window.open("YOUR_GOOGLE_DRIVE_LINK_HERE", "_blank");
+    window.open("https://drive.google.com/file/d/1qArwyNpWr4i-raA1zQmZ-fnm3eYGlz8f/view?usp=drive_link", "_blank");
   };
 
   return (
@@ -16,8 +16,8 @@ export default function ResumeBriefcase() {
         width: "120px",
         height: "120px",
         cursor: "pointer",
-        top: "-2250px",
-        left: "70%",
+        top: "-2350px",
+        left: "600px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -39,7 +39,7 @@ export default function ResumeBriefcase() {
           fontWeight:900
         }}
       >
-        open my credentials 
+        my resume (serious stuff)
       </div>
 
       {/* paper */}

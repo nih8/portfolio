@@ -31,6 +31,7 @@ export default function MemoryPhoto({
         .getElementById(target)
         ?.scrollIntoView({
           behavior: "smooth",
+          block :"start"
         });
     }
   }}
@@ -110,7 +111,7 @@ export default function MemoryPhoto({
         <div
           style={{
             position: "absolute",
-            bottom: "-65px",
+            bottom: "-35px",
             left: "50%",
             transform: "translateX(-50%)",
             background: "#fef3c7",
@@ -129,7 +130,7 @@ export default function MemoryPhoto({
               "0 10px 25px rgba(0,0,0,0.12)",
           }}
         >
-          click to explore ✨
+          wanna know about me?
         </div>
 
       </div>
