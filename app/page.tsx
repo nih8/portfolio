@@ -96,7 +96,7 @@ export default function Home() {
         <MemoryPhoto
           image="/main.jpeg"
           text="This is me :)"
-          top="40px"
+          top="20px"
           left="780px"
           rotate="-5deg"
           target="about-me"

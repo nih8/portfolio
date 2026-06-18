@@ -21,7 +21,7 @@ style={{
 
 position:"absolute",
 
-top:"300px",
+top:"250px",
 
 right:"70px",
 
