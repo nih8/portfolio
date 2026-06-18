@@ -8,7 +8,6 @@ export default function ProjectViewer({
   title: string;
 }) {
 
-
 return (
 
 <div
@@ -26,12 +25,6 @@ background:"rgba(0,0,0,0.75)",
 backdropFilter:"blur(8px)",
 
 zIndex:1000,
-
-display:"flex",
-
-alignItems:"center",
-
-justifyContent:"center",
 
 }}
 
@@ -70,8 +63,7 @@ cursor:"pointer",
 
 zIndex:2000,
 
-boxShadow:
-"0 5px 15px rgba(0,0,0,0.3)"
+boxShadow:"0 5px 15px rgba(0,0,0,0.3)"
 
 }}
 
@@ -83,13 +75,25 @@ boxShadow:
 
 
 
-{/* papers container */}
+{/* papers wrapper */}
 
 <div
 
 onClick={(e)=>e.stopPropagation()}
 
 style={{
+
+position:"absolute",
+
+top:"50%",
+
+left:"50%",
+
+transform:"translate(-50%, -50%)",
+
+width:"760px",
+
+height:"420px",
 
 display:"flex",
 
@@ -101,8 +105,8 @@ gap:"35px",
 
 }}
 
-
 >
+
 
 
 
@@ -112,6 +116,7 @@ gap:"35px",
 <div
 
 style={{
+  flexShrink:0,
 
 width:"300px",
 
@@ -121,8 +126,7 @@ background:"#fffdf8",
 
 padding:"15px",
 
-boxShadow:
-"0 25px 60px rgba(0,0,0,0.35)",
+boxShadow:"0 25px 60px rgba(0,0,0,0.35)",
 
 transform:"rotate(-5deg)",
 
@@ -131,7 +135,6 @@ borderRadius:"8px",
 position:"relative",
 
 }}
-
 
 >
 
@@ -148,8 +151,7 @@ top:"-15px",
 
 left:"50%",
 
-transform:
-"translateX(-50%) rotate(-5deg)",
+transform:"translateX(-50%) rotate(-5deg)",
 
 width:"70px",
 
@@ -162,6 +164,8 @@ opacity:0.8,
 }}
 
  />
+
+
 
 
 
@@ -184,6 +188,7 @@ overflow:"hidden",
 >
 
 <a href="www.google.com">
+
 <img
 
 src="/placeholder-project.png"
@@ -198,11 +203,13 @@ objectFit:"cover",
 
 }}
 
-/></a>
+/>
+
+</a>
 
 
 
-{/* play button */}
+
 
 <div
 
@@ -214,8 +221,7 @@ top:"50%",
 
 left:"50%",
 
-transform:
-"translate(-50%,-50%)",
+transform:"translate(-50%,-50%)",
 
 width:"65px",
 
@@ -237,18 +243,36 @@ color:"#18181b",
 
 }}
 
-><a href="www.google.com" style={{color:"black",textDecoration:"none"}}>
+>
+
+<a
+
+href="www.google.com"
+
+style={{
+
+color:"black",
+
+textDecoration:"none"
+
+}}
+
+>
 
 ▶
+
 </a>
-</div>
-
-
 
 </div>
 
 
+
 </div>
+
+
+</div>
+
+
 
 
 
@@ -261,6 +285,7 @@ color:"#18181b",
 <div
 
 style={{
+  flexShrink:0,
 
 width:"350px",
 
@@ -270,8 +295,7 @@ background:"#fefce8",
 
 padding:"30px",
 
-boxShadow:
-"0 25px 60px rgba(0,0,0,0.3)",
+boxShadow:"0 25px 60px rgba(0,0,0,0.3)",
 
 transform:"rotate(4deg)",
 
@@ -286,6 +310,7 @@ position:"relative",
 }}
 
 >
+
 
 
 {/* paper clip */}
@@ -304,8 +329,7 @@ width:"35px",
 
 height:"55px",
 
-border:
-"3px solid #71717a",
+border:"3px solid #71717a",
 
 borderRadius:"20px",
 
@@ -314,6 +338,9 @@ transform:"rotate(15deg)"
 }}
 
  />
+
+
+
 
 
 
@@ -335,6 +362,9 @@ PROJECT FILE
 
 
 
+
+
+
 <h1
 
 style={{
@@ -353,6 +383,9 @@ marginTop:"10px"
 
 
 
+
+
+
 <p
 
 style={{
@@ -367,16 +400,24 @@ Project description goes here.
 
 <br/>
 
-This is where you can explain what
-the project does.
+This is where you can explain what the project does.
 
 </p>
 
 
 
+
+
+
 <h3>
+
 Tech Stack
+
 </h3>
+
+
+
+
 
 
 <p>
@@ -384,6 +425,9 @@ Tech Stack
 React • C++ • AI
 
 </p>
+
+
+
 
 
 
@@ -400,7 +444,6 @@ gap:"15px"
 }}
 
 >
-
 
 <button>
 
@@ -426,9 +469,7 @@ Demo
 
 
 
-
 </div>
-
 
 
 
