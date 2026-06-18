@@ -211,7 +211,7 @@ export default function PurpleQuestion() {
               purple.
               <br/>
               Since I wanted to make this page look personal, rather than something robotic,
-              I chose purple to be a major color throughout this resume.
+              I chose purple to be a major color throughout this portfolio.
             </p>
 
 
