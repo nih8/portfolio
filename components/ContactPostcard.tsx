@@ -63,7 +63,7 @@ export default function ContactPostcard({ close }: Props) {
             borderRight: "2px dashed #d8b4fe",
           }}
         >
-          <h1>Hey! 👋</h1>
+          <h1>Hey! Lets Talk</h1>
 
           <p
             style={{
@@ -74,10 +74,11 @@ export default function ContactPostcard({ close }: Props) {
             Let's connect :)
           </p>
 
-          <p>📧 Email</p>
-          <p>💻 GitHub</p>
-          <p>🔗 LinkedIn</p>
-          <p>📄 Resume</p>
+          <p>b24cs1045@gmail.com</p>
+          <p><a href="https://github.com/nih8" style={{textDecoration:"none"}}>GitHub</a></p>
+          <p><a href="https://www.linkedin.com/in/niharika-more-315112328/" style={{textDecoration:"none"}}>Linkedin</a></p>
+          <p><a href="https://drive.google.com/file/d/1qArwyNpWr4i-raA1zQmZ-fnm3eYGlz8f/view?usp=drive_link" style={{textDecoration:"none"}}>Resume</a></p>
+          
         </div>
 
         {/* RIGHT SIDE */}

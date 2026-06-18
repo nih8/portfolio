@@ -38,6 +38,7 @@ export default function MemoryPhoto({
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       style={{
+      
         position: "absolute",
         top,
         left,

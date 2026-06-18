@@ -22,10 +22,11 @@ export default function ProjectFile({
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
         style={{
+          border:"1px solid #b89fe3",
           width: "260px",
           height: "180px",
           background: "#f8f5ee",
-          border: "1px solid #ddd",
+          
           cursor: "pointer",
           padding: "25px",
           boxShadow: hover
@@ -64,6 +65,7 @@ export default function ProjectFile({
             margin: 0,
             letterSpacing: hover ? "1px" : "0px",
             transition: "0.25s ease",
+            fontWeight:900
           }}
         >
           PROJECT FILE {number}
@@ -88,6 +90,7 @@ export default function ProjectFile({
             opacity: hover ? 1 : 0.8,
             transform: hover ? "translateY(-2px)" : "translateY(0px)",
             transition: "0.25s ease",
+            fontWeight:900
           }}
         >
           Click to open file →

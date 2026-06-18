@@ -15,7 +15,7 @@ export default function HobbyNote() {
         onClick={() => setOpen(true)}
         style={{
           position: "absolute",
-          top: "50px",
+          top: "30px",
           left: "5%",
           width: "110px",
           height: "140px",
@@ -25,6 +25,7 @@ export default function HobbyNote() {
           cursor: "pointer",
           zIndex: 5,
           overflow: "hidden",
+          border:"1px solid #b89fe3",
 
           /* ✨ animation added */
           transform: hover

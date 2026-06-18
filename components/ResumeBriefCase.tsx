@@ -12,12 +12,13 @@ export default function ResumeBriefcase() {
   return (
     <div
       style={{
-        position: "relative",
+        
         width: "120px",
         height: "120px",
         cursor: "pointer",
-        top: "-2350px",
-        left: "600px",
+        position:"absolute",
+top:"360px",
+left:"450px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

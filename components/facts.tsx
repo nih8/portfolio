@@ -20,6 +20,8 @@ export default function Fact({ fact, top, left, rotate, color }: FactProps) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       style={{
+        
+        
         borderRadius:"5%",
         position: "absolute",
         top,
@@ -30,6 +32,7 @@ export default function Fact({ fact, top, left, rotate, color }: FactProps) {
 
         background: color,
         padding: "15px",
+
         boxShadow: hover
           ? "0 18px 35px rgba(0,0,0,0.22)"
           : "0 10px 25px rgba(0,0,0,0.15)",
@@ -54,6 +57,49 @@ export default function Fact({ fact, top, left, rotate, color }: FactProps) {
         userSelect: "none",
       }}
     >
+
+     {/* tape top-left */}
+<div
+  style={{
+    position:"absolute",
+
+    top:"-3px",
+    left:"-18px",
+
+    width:"55px",
+    height:"14px",
+
+    background:color,
+    opacity:0.55,
+
+    transform:"rotate(-45deg)",
+
+    boxShadow:"0 3px 6px rgba(0,0,0,0.12)",
+  }}
+/>
+
+
+{/* tape top-right */}
+<div
+  style={{
+    position:"absolute",
+
+    top:"-6px",
+    right:"-12px",
+
+    width:"55px",
+    height:"14px",
+
+    background:color,
+    opacity:0.55,
+
+    transform:"rotate(45deg)",
+
+    boxShadow:"0 3px 6px rgba(0,0,0,0.12)",
+  }}
+/>
+
+
       <div
         style={{
           transition: "all 0.25s ease",
@@ -62,6 +108,7 @@ export default function Fact({ fact, top, left, rotate, color }: FactProps) {
       >
         {revealed ? fact : "Click for a random fact"}
       </div>
+
     </div>
   );
 }

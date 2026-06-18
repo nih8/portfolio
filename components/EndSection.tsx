@@ -205,8 +205,7 @@ animation:"stamp 0.6s ease-out",
 }}
 
 >
-
-AVAILABLE ✨
+Yippie!
 
 </div>
 
@@ -240,7 +239,8 @@ style={{
 
 color:"#6b21a8",
 
-marginBottom:"25px"
+marginBottom:"25px",
+fontWeight:900
 
 }}
 

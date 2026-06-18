@@ -12,8 +12,8 @@ export default function IITNote() {
       style={{
         position: "absolute",
 
-        top: "260px",
-        left: "6%",
+        top: "240px",
+        left: "200px",
 
         width: "130px",
         height: "110px",

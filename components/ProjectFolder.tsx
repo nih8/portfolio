@@ -21,9 +21,9 @@ style={{
 
 position:"absolute",
 
-top:"50px",
+top:"40px",
 
-right:"100px",
+right:"50px",
 
 width:"240px",
 

@@ -1,18 +1,19 @@
 "use client";
 
 import MemoryPhoto from "@/components/memoryphoto";
-import ContactLetter from "@/components/ContactLetter";
 import Fact from "@/components/facts";
 import HobbyNote from "@/components/HobbyNote";
 import CookingPot from "@/components/CookingPot";
-import ProjectFolder from "@/components/ProjectFolder";
 import ProjectFile from "@/components/ProjectFile";
 import ResumeBriefcase from "@/components/ResumeBriefCase";
 import IITNote from "@/components/IITNote";
 import Bubble from "@/components/SurpriseBubble";
 import About from "@/components/AboutMe";
 import End from "@/components/EndSection";
-
+import Project from "@/components/ProjectFolder";
+import Contact from "@/components/ContactLetter";
+import PurpleQuestion from "@/components/PurpleQuestion";
+import Cat from "@/components/PurpleCatNameplate";
 import { useState, useEffect } from "react";
 
 
@@ -43,9 +44,16 @@ export default function Home() {
 
     <div
       style={{
-        width: "1000px",
-        transform: `scale(${scale})`,
-        transformOrigin: "top left",
+        width:"1000px",
+
+        transform:`scale(${scale})`,
+
+        transformOrigin:"top left",
+
+        /*
+          removes extra space created by scale()
+        */
+        
       }}
     >
 
@@ -53,10 +61,13 @@ export default function Home() {
       <main
 
         style={{
+
           position:"relative",
+
           background:"#f5efff",
+
           padding:"20px",
-          minHeight:"fit-content",
+
         }}
 
       >
@@ -65,11 +76,17 @@ export default function Home() {
         <div
           style={{
             position:"absolute",
+
             inset:0,
+
             backgroundImage:"url('/cets.png')",
+
             backgroundRepeat:"repeat",
+
             backgroundSize:"280px",
+
             opacity:0.08,
+
             pointerEvents:"none",
           }}
         />
@@ -79,8 +96,8 @@ export default function Home() {
         <MemoryPhoto
           image="/main.jpeg"
           text="This is me :)"
-          top="160px"
-          left="420px"
+          top="290px"
+          left="650px"
           rotate="-5deg"
           target="about-me"
           size="140px"
@@ -90,26 +107,26 @@ export default function Home() {
 
         <Fact
           fact="💣 BOOM. lol"
-          top="400px"
-          left="450px"
+          top="800px"
+          left="900px"
           rotate="-2deg"
-          color="#0fbedd"
+          color="#f18c8c"
         />
 
 
         <Fact
           fact="i love Zendaya"
-          top="200px"
-          left="270px"
+          top="800px"
+          left="60px"
           rotate="5deg"
-          color="#80c56e"
+          color="#e1a1db"
         />
 
 
         <Fact
           fact="im always eepy"
-          top="400px"
-          left="750px"
+          top="560px"
+          left="850px"
           rotate="-6deg"
           color="#c77acb"
         />
@@ -118,7 +135,7 @@ export default function Home() {
         <Fact
           fact="i like cats but im scared to approach 'em"
           top="40px"
-          left="460px"
+          left="580px"
           rotate="9deg"
           color="#efabab"
         />
@@ -131,17 +148,25 @@ export default function Home() {
 
         <section
           id="projects"
+
           style={{
+
             position:"relative",
-            paddingBottom:"50px",
+
             marginTop:"1000px",
+
+            paddingBottom:"50px",
+
           }}
+
         >
 
           <h1
             style={{
               textAlign:"center",
+
               fontFamily:'"Bradley Hand ITC","Segoe Print"',
+
               color:"#3f3f46"
             }}
           >
@@ -152,11 +177,17 @@ export default function Home() {
 
           <div
             style={{
+
               display:"grid",
+
               gridTemplateColumns:"repeat(2,350px)",
+
               justifyContent:"center",
+
               gap:"60px",
+
               marginTop:"70px"
+
             }}
           >
 
@@ -195,31 +226,27 @@ export default function Home() {
 
 
 
-
-        <ContactLetter
-          top="380px"
-          left="180px"
-          rotate="-10deg"
-        />
-
+        <Project/>
         <HobbyNote />
 
         <CookingPot />
-
-        <ProjectFolder />
 
         <ResumeBriefcase />
 
         <IITNote />
 
         <Bubble />
-
-
-
+        <Contact
+        top="380px"
+        left="250px"
+        rotate="-5deg"
+        />
         
-          <End />
-        
 
+        {/* LAST THING ON PAGE */}
+        <End />
+        <PurpleQuestion/>
+        <Cat />
 
 
       </main>
@@ -228,4 +255,5 @@ export default function Home() {
     </div>
 
   );
+
 }

@@ -33,6 +33,7 @@ export default function AboutMe() {
           animation: "wobble 4s ease-in-out infinite",
           fontFamily: '"Bradley Hand ITC","Segoe Print"',
           color: "#3b0764",
+          border:"1px solid #7c3aed"
         }}
       >
         {/* tape left */}
@@ -43,8 +44,8 @@ export default function AboutMe() {
             left: "20px",
             width: "60px",
             height: "18px",
-            background: "#fde68a",
-            opacity: 0.85,
+            background: "#3100d4",
+            opacity: 0.4,
             transform: "rotate(-8deg)",
           }}
         />
@@ -53,23 +54,29 @@ export default function AboutMe() {
         <div
           style={{
             position: "absolute",
-            top: "-5px",
-            right: "20px",
-            width: "60px",
-            height: "18px",
-            background: "#fde68a",
-            opacity: 0.85,
-            transform: "rotate(7deg)",
+            top: "10px",
+            right: "-40px",
+            width: "200px",
+            height: "30px",
+            background: "#3100d4",
+            opacity: 0.4,
+            transform: "rotate(15deg)",
           }}
         />
 
         <h2 style={{ marginBottom: "10px" }}>About Me</h2>
 
-        <p style={{ lineHeight: "1.6", fontSize: "14px" }}>
-          I like building playful interfaces, solving problems, and making
-          things feel alive. I enjoy mixing logic with design to create
-          experiences that feel personal ✨
+        <p style={{ lineHeight: "1.6", fontSize: "14px" ,fontWeight:900}}>
+         I’m a Computer Science undergraduate at Indian Institute of Technology Jodhpur (Class of 2028) with a CGPA of 8.24, currently exploring the endless possibilities of technology and creativity.
+
+I’m from Thane, Maharashtra, and I enjoy building things that are not just functional, but also feel meaningful and memorable. Right now, I’m experimenting, learning, and creating projects that I hope someone might find useful someday.
+
+This portfolio took a lot of time, patience, and tiny details (probably more than I’d like to admit), but I wanted it to feel like a little piece of me rather than just another webpage. 🌸
+
+Still learning. Still building. Still figuring out what I can create next :)
+
         </p>
+        <p style={{ lineHeight: "1.6", fontSize: "14px" ,fontWeight:900}}>PS: The picture on the side is clickable </p>
       </div>
 
       {/* 📸 FLIP CARD */}
@@ -90,6 +97,7 @@ export default function AboutMe() {
             transformStyle: "preserve-3d",
             transition: "transform 0.8s",
             transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)",
+            border:"1px solid #b89fe3",
           }}
         >
           {/* FRONT */}
@@ -108,7 +116,7 @@ export default function AboutMe() {
             }}
           >
             <img
-              src="/main.jpeg"
+              src="/inter iit.jpeg"
               style={{
                 width: "100%",
                 height: "100%",
@@ -134,12 +142,12 @@ export default function AboutMe() {
               padding: "15px",
               textAlign: "center",
               fontFamily: '"Bradley Hand ITC","Segoe Print"',
+              fontWeight:900,
               color: "#3b0764",
               fontSize: "14px",
             }}
           >
-            I’m someone who loves building aesthetic + interactive UIs and
-            turning simple ideas into playful experiences ✨
+            Story behind this picture: After my team and I finished presenting our GDAI PS solution at inter IIT tech meet 14.0, some random photographers asked us to do this one by one. We didnt think much about it and did it for fun. This photo is taken from the instagram post by official IIT Patna Inter IIT tech account T-T
           </div>
         </div>
       </div>
