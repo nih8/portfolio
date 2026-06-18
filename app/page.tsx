@@ -64,7 +64,7 @@ export default function Home() {
 
           position:"relative",
 
-          background:"#f5efff",
+          background:"#c9a9fc",
 
           padding:"20px",
 
@@ -137,7 +137,7 @@ export default function Home() {
           top="40px"
           left="580px"
           rotate="9deg"
-          color="#efabab"
+          color="#c20505"
         />
 
 

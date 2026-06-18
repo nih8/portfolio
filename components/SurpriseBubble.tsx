@@ -18,7 +18,7 @@ export default function SurpriseBubble() {
           position: "absolute",
           top: "30px",
           left: "280px",
-          border:"1px solid #b89fe3",
+          border:"1px solid #00d9ff",
           width: "75px",
           height: "75px",
           borderRadius: "50%",

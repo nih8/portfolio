@@ -90,7 +90,7 @@ export default function CookingPot() {
         style={{
           width: "80px",
           height: "55px",
-          background: "#c084fc",
+          background: "#7f04fb",
           borderRadius: "0 0 25px 25px",
           boxShadow: "0 10px 25px rgba(88,28,135,0.3)",
           position: "relative",
@@ -105,7 +105,7 @@ export default function CookingPot() {
             width: "90px",
             height: "15px",
             borderRadius: "50%",
-            background: "#a855f7",
+            background: "#5c01b0",
           }}
         />
 

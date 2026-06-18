@@ -53,10 +53,10 @@ export default function EndSection() {
 
 
     emailjs.sendForm(
-      "YOUR_SERVICE_ID",
-      "YOUR_TEMPLATE_ID",
+      "service_a18ceyl",
+      "template_jr9gzcu",
       formRef.current!,
-      "YOUR_PUBLIC_KEY"
+      "7wbh0rTxr8mWMaHGW",
     );
 
 

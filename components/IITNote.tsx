@@ -37,7 +37,7 @@ export default function IITNote() {
         style={{
           position: "absolute",
           inset: 0,
-          background: "#fff7cc",
+          background: "#fcd602",
 
           clipPath:
             "polygon(0% 5%, 6% 0%, 14% 4%, 22% 0%, 35% 4%, 48% 0%, 62% 5%, 75% 2%, 88% 6%, 100% 2%, 100% 95%, 94% 100%, 82% 96%, 70% 100%, 58% 96%, 45% 100%, 33% 97%, 20% 100%, 10% 96%, 0% 100%)",

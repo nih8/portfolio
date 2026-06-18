@@ -167,7 +167,7 @@ export default function PurpleCatNameplate() {
           width:"240px",
           height:"120px",
 
-          background:"#ddd6fe",
+          background:"#88a2e8",
 
           color:"#581c87",
         
