@@ -105,17 +105,11 @@ export default function Home() {
 
 
 
+        
+
+
         <Fact
           fact="💣 BOOM. lol"
-          top="800px"
-          left="900px"
-          rotate="-2deg"
-          color="#f18c8c"
-        />
-
-
-        <Fact
-          fact="i love Zendaya"
           top="800px"
           left="60px"
           rotate="5deg"

@@ -9,98 +9,89 @@ export default function SurpriseBubble() {
 
   return (
     <>
-      {/* 🫧 BUBBLE BUTTON */}
-      <div
-        onClick={() => setOpen(true)}
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-        style={{
-          position: "absolute",
-          top: "30px",
-          left: "280px",
-          border:"1px solid #00d9ff",
-          width: "75px",
-          height: "75px",
-          borderRadius: "50%",
+      {/* 📷 CAMERA BUTTON */}
+      {/* 📷 CAMERA BUTTON */}
+<div
+  onClick={() => setOpen(true)}
+  onMouseEnter={() => setHover(true)}
+  onMouseLeave={() => setHover(false)}
+  style={{
+    position: "absolute",
+    top: "0px",
+    left: "232px",
 
-          cursor: "pointer",
+    cursor: "pointer",
 
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+    fontSize: "110px",
 
-          fontFamily: "Inter, sans-serif",
-          fontSize: "12px",
-          fontWeight: 600,
-          color: "#1f1f1f",
+    transform: hover
+      ? "translateY(-8px) rotate(8deg) scale(1.15)"
+      : "rotate(-20deg)",
 
-          background: hover
-            ? "radial-gradient(circle at 30% 30%, #ffffff, #c7d2fe 40%, #818cf8 100%)"
-            : "radial-gradient(circle at 30% 30%, #ffffff, #dbeafe 40%, #93c5fd 100%)",
+    filter: hover
+      ? "drop-shadow(0 15px 15px rgba(0,0,0,0.25))"
+      : "drop-shadow(0 8px 10px rgba(0,0,0,0.18))",
 
-          boxShadow: hover
-            ? "0 18px 40px rgba(0,0,0,0.25)"
-            : "0 10px 25px rgba(0,0,0,0.18)",
+    transition: "all 0.25s ease",
 
-          transform: hover
-            ? "translateY(-6px) scale(1.08) rotate(-3deg)"
-            : "translateY(0px) scale(1)",
+    userSelect: "none",
+  }}
+>
+  📷
+</div>
 
-          transition: "all 0.25s ease",
 
-          userSelect: "none",
-        }}
-      >
-        SURPRISE
-      </div>
-
-      {/* 🖼️ MODAL (FIXED USING PORTAL) */}
+      {/* MODAL */}
       {open &&
         createPortal(
           <div
             onClick={() => setOpen(false)}
             style={{
-              position: "fixed",
-              inset: 0,
-              background: "rgba(0,0,0,0.6)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              zIndex: 99999,
+              position:"fixed",
+              inset:0,
+              background:"rgba(0,0,0,0.6)",
+              display:"flex",
+              alignItems:"center",
+              justifyContent:"center",
+              zIndex:99999,
             }}
           >
+
             <div
-              onClick={(e) => e.stopPropagation()}
+              onClick={(e)=>e.stopPropagation()}
               style={{
-                background: "#fff",
-                padding: "18px",
-                borderRadius: "16px",
-                textAlign: "center",
-                boxShadow: "0 20px 60px rgba(0,0,0,0.4)",
-                maxWidth: "300px",
+                background:"#fff",
+                padding:"18px",
+                borderRadius:"16px",
+                textAlign:"center",
+                boxShadow:"0 20px 60px rgba(0,0,0,0.4)",
+                maxWidth:"300px",
               }}
             >
+
               <img
                 src="/wall4.jpeg"
                 alt="cute me"
                 style={{
-                  width: "100%",
-                  borderRadius: "12px",
+                  width:"100%",
+                  borderRadius:"12px",
                 }}
               />
 
               <p
                 style={{
-                  marginTop: "10px",
-                  fontFamily: "Bradley Hand ITC",
-                  fontWeight: 900,
-                  fontSize: "18px",
-                  color: "#444",
+                  marginTop:"10px",
+                  fontFamily:"Bradley Hand ITC",
+                  fontWeight:900,
+                  fontSize:"18px",
+                  color:"#444",
                 }}
               >
                 it's just a cute pic of me lol :P
               </p>
+
             </div>
+
           </div>,
           document.body
         )}
