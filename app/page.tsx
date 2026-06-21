@@ -188,28 +188,28 @@ export default function Home() {
 
             <ProjectFile
               number="01"
-              title="CrackTheCode"
+              title="AI Logistics Information Assistant"
               rotate="-3deg"
             />
 
 
             <ProjectFile
               number="02"
-              title="Project Two"
+              title="Puzzle-chain"
               rotate="4deg"
             />
 
 
             <ProjectFile
               number="03"
-              title="Project Three"
+              title="Mini-search-engine"
               rotate="-2deg"
             />
 
 
             <ProjectFile
               number="04"
-              title="Project Four"
+              title="GDAI Inter-IIT Tech meet 14.0"
               rotate="3deg"
             />
 

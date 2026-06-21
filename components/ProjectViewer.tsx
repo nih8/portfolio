@@ -1,5 +1,7 @@
 "use client";
 
+import { createPortal } from "react-dom";
+
 export default function ProjectViewer({
   close,
   title,
@@ -8,7 +10,7 @@ export default function ProjectViewer({
   title: string;
 }) {
 
-return (
+return createPortal(
 
 <div
 
@@ -20,11 +22,21 @@ position:"fixed",
 
 inset:0,
 
+width:"100vw",
+
+height:"100vh",
+
 background:"rgba(0,0,0,0.75)",
 
 backdropFilter:"blur(8px)",
 
-zIndex:1000,
+zIndex:99999,
+
+display:"flex",
+
+alignItems:"center",
+
+justifyContent:"center",
 
 }}
 
@@ -83,14 +95,6 @@ onClick={(e)=>e.stopPropagation()}
 
 style={{
 
-position:"absolute",
-
-top:"50%",
-
-left:"50%",
-
-transform:"translate(-50%, -50%)",
-
 width:"760px",
 
 height:"420px",
@@ -105,6 +109,7 @@ gap:"35px",
 
 }}
 
+
 >
 
 
@@ -116,7 +121,7 @@ gap:"35px",
 <div
 
 style={{
-  flexShrink:0,
+flexShrink:0,
 
 width:"300px",
 
@@ -138,8 +143,6 @@ position:"relative",
 
 >
 
-
-{/* tape */}
 
 <div
 
@@ -163,8 +166,7 @@ opacity:0.8,
 
 }}
 
- />
-
+/>
 
 
 
@@ -277,15 +279,13 @@ textDecoration:"none"
 
 
 
-
-
-
 {/* DETAILS PAPER */}
 
 <div
 
 style={{
-  flexShrink:0,
+
+flexShrink:0,
 
 width:"350px",
 
@@ -312,9 +312,6 @@ position:"relative",
 >
 
 
-
-{/* paper clip */}
-
 <div
 
 style={{
@@ -337,8 +334,7 @@ transform:"rotate(15deg)"
 
 }}
 
- />
-
+/>
 
 
 
@@ -364,7 +360,6 @@ PROJECT FILE
 
 
 
-
 <h1
 
 style={{
@@ -380,7 +375,6 @@ marginTop:"10px"
 {title}
 
 </h1>
-
 
 
 
@@ -408,7 +402,6 @@ This is where you can explain what the project does.
 
 
 
-
 <h3>
 
 Tech Stack
@@ -419,13 +412,11 @@ Tech Stack
 
 
 
-
 <p>
 
 React • C++ • AI
 
 </p>
-
 
 
 
@@ -473,8 +464,9 @@ Demo
 
 
 
-</div>
+</div>,
 
+document.body
 
 )
 
