@@ -31,7 +31,7 @@ function HobbyPhoto({
 
         width:"110px",
 
-        background:"#fffdf8",
+        background:"#8ba2d4",
 
         padding:"10px",
 
@@ -117,7 +117,7 @@ return createPortal(
 
     inset:0,
 
-    background:"rgba(0,0,0,0.75)",
+    background:"rgba(208, 160, 223, 0.75)",
 
     backdropFilter:"blur(8px)",
 
@@ -187,8 +187,8 @@ style={{
   background:`
     linear-gradient(
       135deg,
-      #fffdf8,
-      #f7eddc
+      #af69ec,
+      #c86cd8
     )
   `,
 
