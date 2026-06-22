@@ -190,6 +190,14 @@ export default function Home() {
               number="01"
               title="AI Logistics Information Assistant"
               rotate="-3deg"
+              image="/project1.jpeg"
+              demo="https://drive.google.com/file/d/1b4lFMiPHaG8ofvTMTfJHt0XRihZJbWA-/view?usp=sharing"
+
+github="https://github.com/name/project"
+
+description="AI driven cryptography puzzle game with adaptive difficulty."
+
+tech="C • Machine Learning • Algorithms"
             />
 
 
@@ -197,6 +205,14 @@ export default function Home() {
               number="02"
               title="Puzzle-chain"
               rotate="4deg"
+              image="/project1.jpeg"
+              demo="https://your-demo-link.com"
+
+github="https://github.com/name/project"
+
+description="AI driven cryptography puzzle game with adaptive difficulty."
+
+tech="C • Machine Learning • Algorithms"
             />
 
 
@@ -204,6 +220,15 @@ export default function Home() {
               number="03"
               title="Mini-search-engine"
               rotate="-2deg"
+
+              demo="https://drive.google.com/file/d/1Kb8oG--tdIBhoQTqzp_s0vYmelZmPxMq/view?usp=sharing"
+               image="/project1.jpeg"
+
+github="https://github.com/name/project"
+
+description="AI driven cryptography puzzle game with adaptive difficulty."
+
+tech="C • Machine Learning • Algorithms"
             />
 
 
@@ -211,6 +236,14 @@ export default function Home() {
               number="04"
               title="GDAI Inter-IIT Tech meet 14.0"
               rotate="3deg"
+               image="/project1.jpeg"
+              demo="https://your-demo-link.com"
+
+github="https://github.com/name/project"
+
+description="AI driven cryptography puzzle game with adaptive difficulty."
+
+tech="C • Machine Learning • Algorithms"
             />
 
 

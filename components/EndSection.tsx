@@ -16,18 +16,18 @@ function ConfettiPiece({
       style={{
         position: "absolute",
 
-        top: "-20px",
+        top: "-35px",
         left: `${left}%`,
 
         width: "8px",
-        height: "12px",
+        height: "20px",
 
         background:
           ["#c084fc", "#f9a8d4", "#93c5fd", "#fde68a"][
             Math.floor(Math.random() * 4)
           ],
 
-        opacity: 0.8,
+        opacity: 1,
 
         animation: `fall 3s linear ${delay}s infinite`,
 
@@ -108,7 +108,7 @@ style={{
 
   marginTop:"100px",
 
-  paddingBottom:"0px",
+  paddingBottom:"50px",
 
   textAlign:"center",
 

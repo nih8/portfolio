@@ -1,14 +1,30 @@
 "use client";
 
-import { createPortal } from "react-dom";
+import {createPortal} from "react-dom";
+
 
 export default function ProjectViewer({
-  close,
-  title,
-}: {
-  close: () => void;
-  title: string;
-}) {
+
+close,
+title,
+image,
+github,
+demo,
+description,
+tech
+
+}:{
+
+close:()=>void;
+title:string;
+image:string;
+github:string;
+demo:string;
+description:string;
+tech:string;
+
+}){
+
 
 return createPortal(
 
@@ -22,10 +38,6 @@ position:"fixed",
 
 inset:0,
 
-width:"100vw",
-
-height:"100vh",
-
 background:"rgba(0,0,0,0.75)",
 
 backdropFilter:"blur(8px)",
@@ -36,14 +48,13 @@ display:"flex",
 
 alignItems:"center",
 
-justifyContent:"center",
+justifyContent:"center"
 
 }}
 
 >
 
 
-{/* close button */}
 
 <button
 
@@ -67,27 +78,21 @@ border:"none",
 
 background:"#fffdf8",
 
-color:"#581c87",
-
 fontSize:"20px",
 
-cursor:"pointer",
-
-zIndex:2000,
-
-boxShadow:"0 5px 15px rgba(0,0,0,0.3)"
+cursor:"pointer"
 
 }}
 
 >
+
 ✕
+
 </button>
 
 
 
 
-
-{/* papers wrapper */}
 
 <div
 
@@ -95,20 +100,13 @@ onClick={(e)=>e.stopPropagation()}
 
 style={{
 
-width:"760px",
-
-height:"420px",
-
 display:"flex",
-
-alignItems:"center",
-
-justifyContent:"center",
 
 gap:"35px",
 
-}}
+alignItems:"center"
 
+}}
 
 >
 
@@ -118,10 +116,10 @@ gap:"35px",
 
 {/* IMAGE PAPER */}
 
+
 <div
 
 style={{
-flexShrink:0,
 
 width:"300px",
 
@@ -137,38 +135,9 @@ transform:"rotate(-5deg)",
 
 borderRadius:"8px",
 
-position:"relative",
-
 }}
 
 >
-
-
-<div
-
-style={{
-
-position:"absolute",
-
-top:"-15px",
-
-left:"50%",
-
-transform:"translateX(-50%) rotate(-5deg)",
-
-width:"70px",
-
-height:"20px",
-
-background:"#fde68a",
-
-opacity:0.8,
-
-}}
-
-/>
-
-
 
 
 <div
@@ -179,21 +148,27 @@ width:"100%",
 
 height:"100%",
 
-background:"#ddd",
-
 position:"relative",
 
-overflow:"hidden",
+overflow:"hidden"
 
 }}
 
 >
 
-<a href="www.google.com">
+
+<a
+
+href={demo}
+
+target="_blank"
+
+>
+
 
 <img
 
-src="/placeholder-project.png"
+src={image}
 
 style={{
 
@@ -201,14 +176,11 @@ width:"100%",
 
 height:"100%",
 
-objectFit:"cover",
+objectFit:"cover"
 
 }}
 
 />
-
-</a>
-
 
 
 
@@ -239,23 +211,7 @@ alignItems:"center",
 
 justifyContent:"center",
 
-fontSize:"28px",
-
-color:"#18181b",
-
-}}
-
->
-
-<a
-
-href="www.google.com"
-
-style={{
-
-color:"black",
-
-textDecoration:"none"
+fontSize:"28px"
 
 }}
 
@@ -263,16 +219,18 @@ textDecoration:"none"
 
 ▶
 
+</div>
+
+
 </a>
 
-</div>
-
-
 
 </div>
 
 
 </div>
+
+
 
 
 
@@ -281,11 +239,11 @@ textDecoration:"none"
 
 {/* DETAILS PAPER */}
 
+
+
 <div
 
 style={{
-
-flexShrink:0,
 
 width:"350px",
 
@@ -301,72 +259,25 @@ transform:"rotate(4deg)",
 
 borderRadius:"5px",
 
-fontFamily:"serif",
-
-color:"#27272a",
-
-position:"relative",
+fontFamily:"serif"
 
 }}
 
 >
 
 
-<div
-
-style={{
-
-position:"absolute",
-
-top:"-15px",
-
-right:"25px",
-
-width:"35px",
-
-height:"55px",
-
-border:"3px solid #71717a",
-
-borderRadius:"20px",
-
-transform:"rotate(15deg)"
-
-}}
-
-/>
-
-
-
-
-
-<p
-
-style={{
-
-fontSize:"12px",
-
-color:"#71717a"
-
-}}
-
->
+<p>
 
 PROJECT FILE
 
 </p>
 
 
-
-
-
 <h1
 
 style={{
 
-color:"#581c87",
-
-marginTop:"10px"
+color:"#581c87"
 
 }}
 
@@ -375,8 +286,6 @@ marginTop:"10px"
 {title}
 
 </h1>
-
-
 
 
 
@@ -390,15 +299,9 @@ lineHeight:"1.6"
 
 >
 
-Project description goes here.
-
-<br/>
-
-This is where you can explain what the project does.
+{description}
 
 </p>
-
-
 
 
 
@@ -410,14 +313,11 @@ Tech Stack
 
 
 
-
-
 <p>
 
-React • C++ • AI
+{tech}
 
 </p>
-
 
 
 
@@ -426,13 +326,18 @@ React • C++ • AI
 
 style={{
 
-marginTop:"30px",
-
-display:"flex",
-
-gap:"15px"
+marginTop:"30px"
 
 }}
+
+>
+
+
+<a
+
+href={github}
+
+target="_blank"
 
 >
 
@@ -442,16 +347,11 @@ Github
 
 </button>
 
+</a>
 
-<button>
-
-Demo
-
-</button>
 
 
 </div>
-
 
 
 </div>
@@ -461,13 +361,14 @@ Demo
 
 
 </div>
-
 
 
 </div>,
 
+
 document.body
 
 )
+
 
 }
