@@ -259,7 +259,7 @@ transform:"rotate(4deg)",
 
 borderRadius:"5px",
 
-fontFamily:"serif"
+fontFamily:'"serif","Noto Serif"'
 
 }}
 
@@ -273,11 +273,12 @@ PROJECT FILE
 </p>
 
 
-<h1
+<h2
 
 style={{
 
-color:"#581c87"
+color:"#581c87",
+fontFamily:'"courier new","Space Mono"'
 
 }}
 
@@ -285,7 +286,7 @@ color:"#581c87"
 
 {title}
 
-</h1>
+</h2>
 
 
 
@@ -293,7 +294,9 @@ color:"#581c87"
 
 style={{
 
-lineHeight:"1.6"
+lineHeight:"1.6",
+fontFamily:"bradley hand itc",
+fontWeight:900
 
 }}
 
@@ -305,7 +308,7 @@ lineHeight:"1.6"
 
 
 
-<h3>
+<h3 style={{fontFamily:'"courier new","Space Mono"'}}>
 
 Tech Stack
 
@@ -313,7 +316,8 @@ Tech Stack
 
 
 
-<p>
+<p style={{fontFamily:"bradley hand itc",
+fontWeight:900}}>
 
 {tech}
 
@@ -341,7 +345,8 @@ target="_blank"
 
 >
 
-<button>
+<button style={{fontFamily:'"courier","Space Mono"',
+fontWeight:900}}>
 
 Github
 

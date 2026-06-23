@@ -74,7 +74,7 @@ export default function ContactPostcard({ close }: Props) {
 
           position:"relative",
 
-          fontFamily:"Old English Text MT",
+          fontFamily:'"Old English Text MT","UnifrakturCook"',
 
           color:"#4b2e1f",
 

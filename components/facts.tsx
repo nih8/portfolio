@@ -50,7 +50,7 @@ export default function Fact({ fact, top, left, rotate, color }: FactProps) {
         justifyContent: "center",
 
         textAlign: "center",
-        fontFamily: "Bradley Hand ITC",
+        fontFamily: `"Bradley Hand ITC","Caveat"`,
         fontWeight: 900,
         color: "#581c87",
         fontSize: "11px",

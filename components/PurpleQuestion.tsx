@@ -65,7 +65,7 @@ export default function PurpleQuestion() {
 
               color:"#581c87",
 
-              fontFamily:"Bradley Hand ITC",
+              fontFamily:'"Bradley Hand ITC","Caveat"',
 
               fontWeight:900,
 
@@ -135,7 +135,7 @@ export default function PurpleQuestion() {
 
                 color:"#581c87",
 
-                fontFamily:'"Bradley Hand ITC","Segoe Print"',
+                fontFamily:'"Bradley Hand ITC","Caveat"',
 
                 fontSize:"20px",
 

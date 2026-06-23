@@ -81,7 +81,7 @@ export default function SurpriseBubble() {
               <p
                 style={{
                   marginTop:"10px",
-                  fontFamily:"Bradley Hand ITC",
+                  fontFamily:'"Bradley Hand ITC","Caveat"',
                   fontWeight:900,
                   fontSize:"18px",
                   color:"#444",

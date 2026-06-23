@@ -118,7 +118,7 @@ PROJECT FILE {number}
 
 style={{
 
-fontFamily:"serif",
+fontFamily:'"courier new","Space Mono"',
 
 color:"#27272a",
 

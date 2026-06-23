@@ -84,7 +84,7 @@ function HobbyPhoto({
 
           textAlign:"center",
 
-          fontFamily:"Bradley Hand ITC",
+          fontFamily:`"Bradley Hand ITC","Caveat"`,
 
           color:"#581c87",
 

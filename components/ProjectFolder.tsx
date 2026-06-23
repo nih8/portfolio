@@ -108,7 +108,7 @@ width:"150px",
 
 textAlign:"center",
 
-fontFamily:"serif",
+fontFamily:'"serif","Noto Serif"',
 
 boxShadow:
 "0 5px 15px rgba(0,0,0,0.15)"
@@ -159,7 +159,7 @@ padding:"8px 12px",
 
 fontSize:"12px",
 
-fontFamily:"Bradley Hand ITC",
+fontFamily:'"Bradley Hand ITC","Caveat"',
 fontWeight:900,
 
 transform:"rotate(-6deg)",

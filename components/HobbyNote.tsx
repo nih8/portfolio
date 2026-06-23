@@ -102,6 +102,7 @@ export default function HobbyNote() {
               marginBottom: "0px",
               letterSpacing: hover ? "1px" : "0px",
               transition: "0.3s ease",
+              fontFamily:'"courier new","Space Mono"'
             }}
           >
             Hobbies
@@ -112,7 +113,7 @@ export default function HobbyNote() {
               fontSize: "14px",
               transform: hover ? "translateX(2px)" : "translateX(0px)",
               transition: "0.3s ease",
-              fontFamily:"georgia"
+              fontFamily:'"georgia","Lora"'
             }}
           >
             <li>gaming</li>
@@ -123,12 +124,12 @@ export default function HobbyNote() {
 
           <p
             style={{
-              fontSize: "11px",
-              color: "#7c3aed",
+              fontSize: "13px",
+              color: "#5400e4",
               opacity: hover ? 1 : 0.8,
               transform: hover ? "translateY(-2px)" : "translateY(0px)",
               transition: "0.3s ease",
-              fontFamily:"Bradley Hand ITC",
+              fontFamily:`"Bradley Hand ITC","Caveat"`,
               fontWeight:900
 
             }}

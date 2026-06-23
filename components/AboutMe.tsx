@@ -31,7 +31,7 @@ export default function AboutMe() {
           position: "relative",
           transform: "rotate(-2deg)",
           animation: "wobble 4s ease-in-out infinite",
-          fontFamily: '"Bradley Hand ITC","Segoe Print"',
+          fontFamily: '"Bradley Hand ITC","Caveat"',
           color: "#3b0764",
           border:"1px solid #7c3aed"
         }}
@@ -64,7 +64,7 @@ export default function AboutMe() {
           }}
         />
 
-        <h2 style={{ marginBottom: "10px" }}>About Me</h2>
+        <h2 style={{ marginBottom: "10px",fontFamily:'"courier new","Space Mono"' }}>About Me</h2>
 
         <p style={{ lineHeight: "1.6", fontSize: "14px" ,fontWeight:900}}>
          I’m a Computer Science undergraduate at Indian Institute of Technology Jodhpur (Class of 2028) with a CGPA of 8.24, currently exploring the endless possibilities of technology and creativity.
@@ -141,7 +141,7 @@ Still learning. Still building. Still figuring out what I can create next :)
               justifyContent: "center",
               padding: "15px",
               textAlign: "center",
-              fontFamily: '"Bradley Hand ITC","Segoe Print"',
+              fontFamily: '"Bradley Hand ITC","Caveat"',
               fontWeight:900,
               color: "#3b0764",
               fontSize: "14px",

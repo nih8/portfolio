@@ -159,7 +159,7 @@ export default function Home() {
             style={{
               textAlign:"center",
 
-              fontFamily:'"Bradley Hand ITC","Segoe Print"',
+              fontFamily:'"Bradley Hand ITC","Caveat"',
 
               color:"#3f3f46"
             }}
@@ -193,11 +193,11 @@ export default function Home() {
               image="/project1.jpeg"
               demo="https://drive.google.com/file/d/1b4lFMiPHaG8ofvTMTfJHt0XRihZJbWA-/view?usp=sharing"
 
-github="https://github.com/name/project"
+github="https://github.com/nih8/ai-logistics-assistant"
 
-description="AI driven cryptography puzzle game with adaptive difficulty."
+description="An assistant which provides information about my institute using the website data as a knowledge base"
 
-tech="C • Machine Learning • Algorithms"
+tech="Python • Langchain • Beautifulsoup"
             />
 
 
@@ -208,7 +208,7 @@ tech="C • Machine Learning • Algorithms"
               image="/project1.jpeg"
               demo="https://your-demo-link.com"
 
-github="https://github.com/name/project"
+github="https://github.com/nih8/Puzzle-chain"
 
 description="AI driven cryptography puzzle game with adaptive difficulty."
 
@@ -224,7 +224,7 @@ tech="C • Machine Learning • Algorithms"
               demo="https://drive.google.com/file/d/1Kb8oG--tdIBhoQTqzp_s0vYmelZmPxMq/view?usp=sharing"
                image="/project1.jpeg"
 
-github="https://github.com/name/project"
+github="https://github.com/nih8/Mini-Search-Engine"
 
 description="AI driven cryptography puzzle game with adaptive difficulty."
 
@@ -239,7 +239,7 @@ tech="C • Machine Learning • Algorithms"
                image="/project1.jpeg"
               demo="https://your-demo-link.com"
 
-github="https://github.com/name/project"
+github="https://www.google.com/search?q=private+repository&oq=provate+repo&gs_lcrp=EgZjaHJvbWUqCQgCEAAYDRiABDIGCAAQRRg5MgkIARAAGA0YgAQyCQgCEAAYDRiABDIJCAMQABgNGIAEMgkIBBAAGA0YgAQyCQgFEAAYDRiABDIJCAYQABgNGIAEMgkIBxAAGA0YgAQyCQgIEAAYDRiABDIJCAkQABgNGIAE0gEINDQ4MGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
 
 description="AI driven cryptography puzzle game with adaptive difficulty."
 

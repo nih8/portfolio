@@ -63,11 +63,11 @@ export default function IITNote() {
         }}
       >
         <div>
-          <div style={{ fontSize: "20px",fontFamily:"times new roman"}}>
+          <div style={{ fontSize: "20px",fontFamily:'"times new roman","Libre Baskerville"'}}>
             IIT J 2028
           </div>
 
-          <div style={{ fontSize: "18px", marginTop: "0px" ,fontFamily:"Bradley Hand ITC",fontWeight:900}}>
+          <div style={{ fontSize: "18px", marginTop: "0px" ,fontFamily:'"Bradley Hand ITC","Caveat"',fontWeight:900}}>
             CGPA: 8.24
           </div>
         </div>

@@ -65,7 +65,7 @@ export default function CookingPot() {
             padding: "15px",
             borderRadius: "8px",
             boxShadow: "0 15px 35px rgba(0,0,0,0.2)",
-            fontFamily: "georgia",
+            fontFamily: '"georgia","Lora"',
             color: "#581c87",
             textAlign: "center",
           }}
@@ -76,7 +76,7 @@ export default function CookingPot() {
             style={{
               margin: "5px",
               fontSize: "14px",
-              fontFamily: "Bradley Hand ITC",
+              fontFamily: `"Bradley Hand ITC","Caveat"`,
               fontWeight: 900,
             }}
           >

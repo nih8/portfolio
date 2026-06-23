@@ -176,7 +176,7 @@ export default function PurpleCatNameplate() {
           textAlign:"center",
 
           fontFamily:
-          '"Broadway","Segoe Print"',
+          '"Broadway","Bungee","Segoe Print"',
 
           fontWeight:900,
 

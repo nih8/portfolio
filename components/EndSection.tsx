@@ -112,7 +112,7 @@ style={{
 
   textAlign:"center",
 
-  fontFamily:'"Bradley Hand ITC","Segoe Print"',
+  fontFamily:'"Bradley Hand ITC","Caveat"',
 
 }}
 
