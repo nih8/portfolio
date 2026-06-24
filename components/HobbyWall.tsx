@@ -6,485 +6,198 @@ type Props = {
   close: () => void;
 };
 
-
+/* ---------------- Photo ---------------- */
 function HobbyPhoto({
   image,
   text,
-  top,
-  left,
-  rotate,
 }: {
-  image:string;
-  text:string;
-  top:string;
-  left:string;
-  rotate:string;
+  image: string;
+  text: string;
 }) {
-
   return (
     <div
       style={{
-        position:"absolute",
-
-        top,
-        left,
-
-        width:"110px",
-
-        background:"#8ba2d4",
-
-        padding:"10px",
-
-        boxShadow:"0 15px 35px rgba(0,0,0,0.25)",
-
-        transform:`rotate(${rotate})`,
-
-        zIndex:5,
+        width: "140px",
+        display: "flex",
+        flexDirection: "column",
+        gap: "6px",
+        padding: "8px",
+        background: "rgba(255,255,255,0.92)",
+        borderRadius: "10px",
+        boxShadow: "0 10px 25px rgba(0,0,0,0.25)",
+        fontFamily: "Bradley hand itc",
+        fontWeight: 900,
+        position: "relative",
       }}
     >
-
-
-      {/* tape */}
+      {/* violet tape (single color) */}
       <div
         style={{
-          position:"absolute",
-
-          top:"-12px",
-
-          left:"50%",
-
-          transform:"translateX(-50%) rotate(-5deg)",
-
-          width:"55px",
-
-          height:"15px",
-
-          background:"#fde68a",
-
-          opacity:0.85,
+          position: "absolute",
+          top: "-10px",
+          left: "50%",
+          transform: "translateX(-50%) rotate(-6deg)",
+          width: "60px",
+          height: "16px",
+          background: "#7c3aed",
+          borderRadius: "4px",
+          opacity: 0.65,
+          boxShadow: "0 6px 12px rgba(0,0,0,0.25)",
         }}
       />
-
 
       <img
         src={image}
         style={{
-          width:"100%",
-
-          height:"80px",
-
-          objectFit:"cover",
+          width: "100%",
+          height: "100px",
+          objectFit: "cover",
+          borderRadius: "8px",
         }}
       />
 
-
       <p
         style={{
-          margin:"8px 0 0",
-
-          textAlign:"center",
-
-          fontFamily:`"Bradley Hand ITC","Caveat"`,
-
-          color:"#581c87",
-
-          fontSize:"12px",
-
-          fontWeight:700,
+          margin: 0,
+          fontSize: "12px",
+          textAlign: "center",
+          fontFamily: "cursive",
+          color: "#4c1d95",
+          fontWeight: 600,
         }}
       >
         {text}
       </p>
-
-
     </div>
   );
 }
 
+/* ---------------- Text Block ---------------- */
+function TextBlock({ text }: { text: string }) {
+  return (
+    <div
+      style={{
+        width: "140px",
+        height: "120px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontSize: "15px",
+        color: "#26045d",
+        textAlign: "center",
+        textShadow: "0 2px 6px rgba(0,0,0,0.6)",
+        fontFamily: "Bradley hand itc",
+        fontWeight: 900,
+      }}
+    >
+      {text}
+    </div>
+  );
+}
 
-
-
+/* ---------------- Main ---------------- */
 export default function HobbyWall({ close }: Props) {
+  return createPortal(
+    <div
+      onClick={close}
+      style={{
+        position: "fixed",
+        inset: 0,
+        background: "#111",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        zIndex: 1000,
+      }}
+    >
+      {/* close */}
+      <button
+        onClick={close}
+        style={{
+          position: "absolute",
+          top: "25px",
+          right: "30px",
+          width: "45px",
+          height: "45px",
+          borderRadius: "50%",
+          border: "none",
+          background: "#fff",
+          cursor: "pointer",
+          fontSize: "18px",
+        }}
+      >
+        ✕
+      </button>
 
-
-return createPortal(
-
+      {/* BOARD */}
+      <div
+        onClick={(e) => e.stopPropagation()}
+        style={{
+          position: "relative",
+          width: "665px",
+          height: "300px",
+          borderRadius: "14px",
+          overflow: "hidden",
+          boxShadow: "0 40px 120px rgba(0,0,0,0.7)",
+          backgroundColor: "#e07ee1",
+          display: "flex",
+          gap: "14px",
+          padding: "16px",
+          alignItems: "center",
+        }}
+      >
+        {/* stronger background lines */}
+        {/* background lines (soft version) */}
 <div
-  onClick={close}
-
   style={{
-    position:"fixed",
-
-    inset:0,
-
-    background:"rgba(208, 160, 223, 0.75)",
-
-    backdropFilter:"blur(8px)",
-
-    zIndex:1000,
-
-    display:"flex",
-
-    alignItems:"center",
-
-    justifyContent:"center",
+    position: "absolute",
+    inset: 0,
+    background: `
+      repeating-linear-gradient(
+        0deg,
+        rgba(255,255,255,0.08) 0px,
+        rgba(255,255,255,0.08) 1px,
+        transparent 1px,
+        transparent 8px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        rgba(0,0,0,0.03) 0px,
+        rgba(0,0,0,0.03) 1px,
+        transparent 1px,
+        transparent 10px
+      )
+    `,
+    pointerEvents: "none",
+    zIndex: 0,
   }}
->
-
-
-
-{/* close button */}
-
-<button
-onClick={close}
-
-style={{
-  position:"absolute",
-
-  top:"30px",
-
-  right:"40px",
-
-  width:"45px",
-
-  height:"45px",
-
-  borderRadius:"50%",
-
-  border:"none",
-
-  background:"#fffdf8",
-
-  color:"#581c87",
-
-  cursor:"pointer",
-
-  fontSize:"20px",
-}}
->
-✕
-</button>
-
-
-
-
-
-{/* scrapbook board */}
-
-<div
-
-onClick={(e)=>e.stopPropagation()}
-
-style={{
-
-  position:"relative",
-
-  width:"400px",
-
-  height:"300px",
-
-
-  background:`
-    linear-gradient(
-      135deg,
-      #af69ec,
-      #c86cd8
-    )
-  `,
-
-
-  boxShadow:
-  "0 30px 100px rgba(0,0,0,0.5)",
-
-
-  transform:"rotate(-2deg)",
-
-
-  padding:"30px",
-
-
-  overflow:"hidden",
-
-
-  borderRadius:"10%",
-
-
-  border:
-  "1px solid rgba(120,80,40,0.15)",
-}}
-
->
-
-
-
-{/* paper texture */}
-
-<div
-style={{
-
-position:"absolute",
-
-inset:0,
-
-
-background:`
-
-repeating-linear-gradient(
-0deg,
-rgba(120,80,40,0.04) 0px,
-rgba(120,80,40,0.04) 1px,
-transparent 1px,
-transparent 5px
-),
-
-repeating-linear-gradient(
-90deg,
-rgba(255,255,255,0.08) 0px,
-rgba(255,255,255,0.08) 1px,
-transparent 1px,
-transparent 6px
-)
-
-`,
-
-
-pointerEvents:"none",
-
-}}
 />
 
-
-
-{/* paper clip */}
-
-<div
-
-style={{
-
-position:"absolute",
-
-bottom:"20px",
-
-right:"20px",
-
-
-width:"35px",
-
-height:"60px",
-
-
-border:"3px solid #a1a1aa",
-
-
-borderRadius:"20px",
-
-
-transform:"rotate(-20deg)",
-
-
-opacity:0.6,
-
-}}
-
->
-
-</div>
-
-
-
-
-
-
-{/* doodle */}
-
-<div
-
-style={{
-
-position:"absolute",
-
-bottom:"20px",
-
-left:"25px",
-
-fontSize:"28px",
-
-transform:"rotate(-15deg)",
-
-}}
-
->
-✦
-</div>
-<div
-
-style={{
-
-position:"absolute",
-
-bottom:"300px",
-
-left:"425px",
-
-fontSize:"28px",
-
-transform:"rotate(-15deg)",
-
-}}
-
->
-✦
-</div>
-<div
-
-style={{
-
-position:"absolute",
-
-bottom:"50px",
-
-left:"245px",
-
-fontSize:"28px",
-
-transform:"rotate(-15deg)",
-
-}}
-
->
-✦
-</div>
-<div
-
-style={{
-
-position:"absolute",
-
-bottom:"300px",
-
-left:"35px",
-
-fontSize:"28px",
-
-transform:"rotate(-15deg)",
-
-}}
-
->
-✦
-</div>
-
-<div
-
-style={{
-
-position:"absolute",
-
-bottom:"200px",
-
-left:"375px",
-
-fontSize:"28px",
-
-transform:"rotate(-15deg)",
-
-}}
-
->
-✦
-</div>
-<div
-
-style={{
-
-position:"absolute",
-
-bottom:"150px",
-
-left:"220px",
-
-fontSize:"28px",
-
-transform:"rotate(-15deg)",
-
-}}
-
->
-✦
-</div>
-<div
-
-style={{
-
-position:"absolute",
-
-bottom:"100px",
-
-left:"35px",
-
-fontSize:"28px",
-
-transform:"rotate(-15deg)",
-
-}}
-
->
-✦
-</div>
-
-
-
-
-
-
-
-
-{/* PHOTOS - SAME POSITIONS */}
-
-<HobbyPhoto
-image="/wall3.jpeg"
-text="dancing"
-top="50px"
-left="40px"
-rotate="-10deg"
-/>
-
-
-<HobbyPhoto
-image="/wall2.jpeg"
-text="gaming (club intro pic)"
-top="20px"
-left="210px"
-rotate="6deg"
-/>
-
-
-<HobbyPhoto
-image="/image.png"
-text="youtube :3"
-top="200px"
-left="80px"
-rotate="4deg"
-/>
-
-
-<HobbyPhoto
-image="/dance.jpeg"
-text="little moments 🌸"
-top="180px"
-left="290px"
-rotate="-7deg"
-/>
-
-
-
-</div>
-
-
-</div>,
-
-document.body
-
-);
-
+        {/* Column 1 */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+          <HobbyPhoto image="/wall3.jpeg" text="" />
+          <TextBlock text="Me and my friend dancing in an inter hostel competition" />
+        </div>
+
+        {/* Column 2 */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+          <TextBlock text="Me during the intro session for our college's gaming club" />
+          <HobbyPhoto image="/wall2.jpeg" text="" />
+        </div>
+
+        {/* Column 3 */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+          <HobbyPhoto image="/gamingz.jpeg" text="" />
+          <TextBlock text="Playing CODM with my friends :3" />
+        </div>
+
+        {/* Column 4 */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+          <TextBlock text="Did a dance performance at the beginning of first year with people i dont know :P" />
+          <HobbyPhoto image="/dance.jpeg" text="" />
+        </div>
+      </div>
+    </div>,
+    document.body
+  );
 }

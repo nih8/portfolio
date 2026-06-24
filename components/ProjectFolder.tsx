@@ -23,7 +23,7 @@ position:"absolute",
 
 top:"250px",
 
-right:"70px",
+right:"90px",
 
 width:"240px",
 
