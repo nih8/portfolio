@@ -67,13 +67,12 @@ export default function AboutMe() {
         <h2 style={{ marginBottom: "10px",fontFamily:'"courier new","Space Mono"' }}>About Me</h2>
 
         <p style={{ lineHeight: "1.6", fontSize: "14px" ,fontWeight:900}}>
-         I’m a Computer Science undergraduate at Indian Institute of Technology Jodhpur (Class of 2028) with a CGPA of 8.24, currently exploring the endless possibilities of technology and creativity.
-
-I’m from Thane, Maharashtra, and I enjoy building things that are not just functional, but also feel meaningful and memorable. Right now, I’m experimenting, learning, and creating projects that I hope someone might find useful someday.
-
-This portfolio took a lot of time, patience, and tiny details (probably more than I’d like to admit), but I wanted it to feel like a little piece of me rather than just another webpage. 🌸
-
-Still learning. Still building. Still figuring out what I can create next :)
+        I am a Computer Science Undergraduate student from IIT Jodhpur, with a cgpa of 8.24. Currently 
+        I am working towards getting a good internship (shamelessly plugging this in because why not :P).
+        My favourite programming language is C++ but I am comfortable with Python and C as well. I have made 
+        a few projects which you can check out by scrolling down or clicking on the folder on the main page.
+        Apart from all this I like playing mobile games, watching youtube, eating food :P, dancing and working out.
+        
 
         </p>
         <p style={{ lineHeight: "1.6", fontSize: "14px" ,fontWeight:900}}>PS: The picture on the side is clickable </p>

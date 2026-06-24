@@ -86,8 +86,8 @@ function TextBlock({ text }: { text: string }) {
         color: "#26045d",
         textAlign: "center",
         textShadow: "0 2px 6px rgba(0,0,0,0.6)",
-        fontFamily: "Bradley hand itc",
-        fontWeight: 900,
+        fontFamily: '"Bradley Hand ITC","Caveat"',
+              fontWeight:900,
       }}
     >
       {text}

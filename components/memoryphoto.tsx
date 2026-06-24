@@ -127,7 +127,8 @@ export default function MemoryPhoto({
             opacity: hover ? 1 : 0,
             pointerEvents: "none",
             transition: "0.3s ease",
-
+            fontFamily: '"Bradley Hand ITC","Caveat"',
+              fontWeight:900,
             boxShadow:
               "0 10px 25px rgba(0,0,0,0.12)",
           }}
