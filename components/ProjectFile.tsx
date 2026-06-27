@@ -97,6 +97,7 @@ transform:"rotate(20deg)"
 <p
 
 style={{
+fontFamily:'"serif","Noto Serif"',
 
 fontSize:"12px",
 
@@ -138,6 +139,8 @@ marginTop:"20px"
 <p
 
 style={{
+   fontFamily: '"Bradley Hand ITC","Caveat"',
+   
 
 fontSize:"14px",
 
